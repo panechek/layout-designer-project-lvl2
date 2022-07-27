@@ -1,1 +1,36 @@
+@import "fonts";
+@import "color";
+
+$mobile-size: 414px;
+
+@mixin title-style($size) {
+  font-size: $size;
+  line-height: 1,5 * $size;
+  font-family: "Roboto Bold";
+  text-transform: uppercase;
+}
+
+body {
+  font-family: "Roboto Regular";
+  font-size: 18px;
+  line-height: 1.5em;
+  color: $grey;
+  background-color: $black;
+}
+
+h1 {
+  @include title-style(60);
+
+  @media (max-width: $mobile-size) {
+    @include title-style(30);
+  }
+}
+
+h2 {
+  @include title-style(38);
+
+  @media (max-width: $mobile-size) {
+    @include title-style(18);
+  }
+}
 

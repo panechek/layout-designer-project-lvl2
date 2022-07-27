@@ -1,18 +1,57 @@
-/* Error: Undefined variable.
- *   ,
- * 2 |   $result: ($value / $rem-base) * 1rem;
- *   |                      ^^^^^^^^^
- *   '
- *   src/scss/app.scss 2:22  rem()
- *   src/scss/app.scss 9:14  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Undefined variable.\a   \2577 \a 2 \2502    $result: ($value / $rem-base) * 1rem;\a   \2502                       ^^^^^^^^^\a   \2575 \a   src/scss/app.scss 2:22  rem()\a   src/scss/app.scss 9:14  root stylesheet";
+@font-face {
+  font-family: "Roboto Bold";
+  src: url("../fonts/Roboto-Bold.ttf");
+  font-weight: 700;
+  font-style: normal;
 }
+@font-face {
+  font-family: "Roboto Medium";
+  src: url("../fonts/Roboto-Medium.ttf");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Roboto Regular";
+  src: url("../fonts/Roboto-Regular.ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+body {
+  font-family: "Roboto Regular";
+  font-size: 18px;
+  line-height: 1.5em;
+  color: #cacaca;
+  background-color: #08020d;
+}
+
+h1 {
+  font-size: 60;
+  line-height: 1, 300;
+  font-family: "Roboto Bold";
+  text-transform: uppercase;
+}
+@media (max-width: 414px) {
+  h1 {
+    font-size: 30;
+    line-height: 1, 150;
+    font-family: "Roboto Bold";
+    text-transform: uppercase;
+  }
+}
+
+h2 {
+  font-size: 38;
+  line-height: 1, 190;
+  font-family: "Roboto Bold";
+  text-transform: uppercase;
+}
+@media (max-width: 414px) {
+  h2 {
+    font-size: 18;
+    line-height: 1, 90;
+    font-family: "Roboto Bold";
+    text-transform: uppercase;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
