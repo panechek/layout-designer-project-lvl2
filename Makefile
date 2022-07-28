@@ -7,7 +7,7 @@ lint:
 	npx htmlhint ./src/*.html
 
 deploy:
-	npx surge ./src/
+	npx surge ./src/ https://heartbreaking-design.surge.sh/
 
 sass:
 	sass /home/panechek/layout-designer-project-lvl2/src/scss/app.scss /home/panechek/layout-designer-project-lvl2/src/css/style.css

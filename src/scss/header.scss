@@ -1,0 +1,168 @@
+header {
+  background-image: url('../images/banner.png');
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  width: 100%;
+  padding-top: 13px
+}
+
+.header {
+  @include flex-between;
+  @include item-center;
+
+  @media (max-width: $mobile-size)  {
+    flex-direction: column;
+    align-items: start;
+  }
+
+  & .main {
+    @include flex-between;
+    @include item-center;
+
+    @media (max-width: $mobile-size)  {
+      flex-direction: column;
+      align-items: start;
+    }
+
+    & .logo {
+      @include flex-between;
+      @include item-center;
+      @include padding-around(12px);
+      padding-left: 0;
+
+      & .name {
+        @include title-style(11px, $regular);
+        padding-left: 16px;
+      }
+
+      & img {
+        height: 24px;
+        width: 24px;
+      }
+    }
+
+    & .nav {
+      & ul { 
+        @include flex-between;
+        @include item-center;
+        padding-left: 66px;
+
+        @media (max-width: $mobile-size)  {
+          flex-direction: column;
+          align-items: start;
+          padding-left: 0;
+          margin-bottom: 18px;
+          margin-top: 5px;
+        }
+
+        & li {
+          @include title-style(11px, $regular);
+          @include padding-around(12px);
+
+          @media (max-width: $mobile-size)  {
+            padding: 0;
+          }
+        }
+      }
+    }
+  }
+
+  & input {
+    width: 248px;
+    height: 25px;
+    background: $dark-grey;
+    border-radius: 50px;
+
+    @media (max-width: $mobile-size)  {
+      width: 100%;
+    }
+  
+    &::placeholder {
+      font-family: 'Arial';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 13.3px;
+      line-height: 15px;
+      text-transform: uppercase;
+      padding-left: 10px;
+
+      color: #757575;
+    }
+  }
+}
+
+#page-description {
+  margin: 200px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media (max-width: $mobile-size)  {
+    text-align: center;
+    margin-top: 78px;
+    margin-bottom: 201px;
+  }
+
+  & p {
+    margin-top: 31px;
+    margin-bottom: 17px;
+
+    @media (max-width: $mobile-size)  {
+      font-size: 16px;
+    }
+  }
+
+  & form {
+    max-width: 570px;
+    width: 100%;
+
+    & .login {
+      @include flex-between;
+
+      @media (max-width: $mobile-size)  {
+        flex-direction: column;
+      }
+
+      & :first-child {
+        margin-right: 3%;
+
+        @media (max-width: $mobile-size)  {
+          margin-right: 0;
+        }
+      }
+
+      & input {
+        min-width: 270px;
+        min-height: 50px;
+        margin-bottom: 1.5rem;
+        border: 2px solid $grey;
+        border-radius: 3px;
+        background: none;
+
+        &::placeholder {
+          padding-left: 20px;
+          font-family: 'Roboto Bold';
+          font-size: 14px;
+          line-height: 16px;
+          color: $white;
+        }
+      }
+
+    }
+
+    & .btn {
+      width: 100%;
+      padding: 20px 30px;
+      border-radius: 5px;
+      background-color: $green;
+      font-family: 'Arial';
+      font-weight: 400;
+      font-size: 13.3px;
+      line-height: 15px;
+      text-transform: uppercase;
+
+    }
+  }
+}
+

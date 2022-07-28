@@ -16,6 +16,17 @@
   font-weight: 400;
   font-style: normal;
 }
+* {
+  outline: 0;
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
 body {
   font-family: "Roboto Regular";
   font-size: 18px;
@@ -24,34 +35,238 @@ body {
   background-color: #08020d;
 }
 
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+@media (max-width: 414px) {
+  .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
 h1 {
-  font-size: 60;
-  line-height: 1, 300;
+  font-size: 60px;
+  line-height: 90px;
   font-family: "Roboto Bold";
   text-transform: uppercase;
 }
 @media (max-width: 414px) {
   h1 {
-    font-size: 30;
-    line-height: 1, 150;
+    font-size: 30px;
+    line-height: 45px;
     font-family: "Roboto Bold";
     text-transform: uppercase;
   }
 }
 
 h2 {
-  font-size: 38;
-  line-height: 1, 190;
+  font-size: 38px;
+  line-height: 57px;
   font-family: "Roboto Bold";
   text-transform: uppercase;
 }
 @media (max-width: 414px) {
   h2 {
-    font-size: 18;
-    line-height: 1, 90;
+    font-size: 18px;
+    line-height: 27px;
     font-family: "Roboto Bold";
     text-transform: uppercase;
   }
+}
+
+li {
+  list-style-type: none;
+}
+
+ul {
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.text-white {
+  color: #ffffff;
+}
+
+.text-grey {
+  color: #cacaca;
+}
+
+.p-24 {
+  padding: 24px;
+}
+
+.p-16 {
+  padding: 16px;
+}
+
+header {
+  background-image: url("../images/banner.png");
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  width: 100%;
+  padding-top: 13px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (max-width: 414px) {
+  .header {
+    flex-direction: column;
+    align-items: start;
+  }
+}
+.header .main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (max-width: 414px) {
+  .header .main {
+    flex-direction: column;
+    align-items: start;
+  }
+}
+.header .main .logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+  padding-left: 0;
+}
+.header .main .logo .name {
+  font-size: 11px;
+  line-height: 16.5px;
+  font-family: "Roboto Regular";
+  text-transform: uppercase;
+  padding-left: 16px;
+}
+.header .main .logo img {
+  height: 24px;
+  width: 24px;
+}
+.header .main .nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 66px;
+}
+@media (max-width: 414px) {
+  .header .main .nav ul {
+    flex-direction: column;
+    align-items: start;
+    padding-left: 0;
+    margin-bottom: 18px;
+    margin-top: 5px;
+  }
+}
+.header .main .nav ul li {
+  font-size: 11px;
+  line-height: 16.5px;
+  font-family: "Roboto Regular";
+  text-transform: uppercase;
+  padding: 12px;
+}
+@media (max-width: 414px) {
+  .header .main .nav ul li {
+    padding: 0;
+  }
+}
+.header input {
+  width: 248px;
+  height: 25px;
+  background: #3c3b3d;
+  border-radius: 50px;
+}
+@media (max-width: 414px) {
+  .header input {
+    width: 100%;
+  }
+}
+.header input::placeholder {
+  font-family: "Arial";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13.3px;
+  line-height: 15px;
+  text-transform: uppercase;
+  padding-left: 10px;
+  color: #757575;
+}
+
+#page-description {
+  margin: 200px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (max-width: 414px) {
+  #page-description {
+    text-align: center;
+    margin-top: 78px;
+    margin-bottom: 201px;
+  }
+}
+#page-description p {
+  margin-top: 31px;
+  margin-bottom: 17px;
+}
+@media (max-width: 414px) {
+  #page-description p {
+    font-size: 16px;
+  }
+}
+#page-description form {
+  max-width: 570px;
+  width: 100%;
+}
+#page-description form .login {
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 414px) {
+  #page-description form .login {
+    flex-direction: column;
+  }
+}
+#page-description form .login :first-child {
+  margin-right: 3%;
+}
+@media (max-width: 414px) {
+  #page-description form .login :first-child {
+    margin-right: 0;
+  }
+}
+#page-description form .login input {
+  min-width: 270px;
+  min-height: 50px;
+  margin-bottom: 1.5rem;
+  border: 2px solid #cacaca;
+  border-radius: 3px;
+  background: none;
+}
+#page-description form .login input::placeholder {
+  padding-left: 20px;
+  font-family: "Roboto Bold";
+  font-size: 14px;
+  line-height: 16px;
+  color: #ffffff;
+}
+#page-description form .btn {
+  width: 100%;
+  padding: 20px 30px;
+  border-radius: 5px;
+  background-color: #34c176;
+  font-family: "Arial";
+  font-weight: 400;
+  font-size: 13.3px;
+  line-height: 15px;
+  text-transform: uppercase;
 }
 
 /*# sourceMappingURL=style.css.map */
