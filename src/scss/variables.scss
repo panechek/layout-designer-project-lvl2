@@ -13,25 +13,52 @@ $regular: "Roboto Regular";
 $medium: "Roboto Medium";
 
 
-$mobile-size: 414px;
+$mobile-size: 415px;
 
-@mixin title-style($size, $type) {
+@mixin title-style($size) {
   font-size: $size;
   line-height: 1.5 * $size;
-  font-family: $type;
+  font-family: $bold;
   text-transform: uppercase;
 }
 
-@mixin flex-between {
+%flex-between {
   display: flex;
   justify-content: space-between;
 }
 
-@mixin item-center {
+@mixin flex-between-item-center {
+  @extend %flex-between;
   align-items: center;
 }
+
+%background-cover {
+  background-position: center;
+  background-size: cover;
+}
+
+
 
 @mixin padding-around ($size) {
   padding: $size;
 }
 
+$items: 1, 2, 3;
+
+@mixin item-back ($item-count) {
+  .item-#{$item-count} {
+    background: url("../images/subscribe_#{$item-count}.png");
+    background-position: center;
+    background-size: cover;
+  }
+}
+
+$text-size: 64, 56, 48, 40, 32, 24, 16, 13, 11;
+
+@mixin text-constructor ($size) {
+  .text-#{$size} {
+    font-family: $regular;
+    font-size: #{$size}px;
+    line-height: #{$size * 1.5}px;
+  }
+}

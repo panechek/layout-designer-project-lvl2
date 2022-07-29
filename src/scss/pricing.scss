@@ -1,0 +1,57 @@
+#page-pricing {
+    padding-top: 100px;
+
+    & h2 {
+        margin-bottom: 45px;
+        text-align: center;
+    }
+
+    & .pricing {
+        @extend %flex-between;
+        margin-bottom: 43px;
+
+        @media (max-width: $mobile-size)  {
+            flex-direction: column;
+            align-items: center;
+          }
+
+        &-item {
+            height: 615px;
+            border-radius: 1rem;
+            padding: 24px 1.5rem;
+
+            &-center {
+                margin: 0 4%;
+
+                @media (max-width: $mobile-size)  {
+                    margin: 50px 0;
+                  }
+            }
+
+            & h3 {
+                margin-bottom: 200px;
+                text-transform: uppercase;
+            }
+
+            & a {
+                padding-top: 21px;
+                padding-bottom: 21px;
+                margin-bottom: 64px;
+                text-transform: uppercase;
+            }
+        }
+        &-value {
+            line-height: 1em;
+            margin-bottom: 40px;
+
+            & span {
+                margin-left: 16px;
+                vertical-align: super;
+            }
+        }
+    }
+}
+
+@each $item in $items {
+    @include item-back($item)
+}

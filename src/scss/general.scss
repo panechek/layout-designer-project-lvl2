@@ -3,54 +3,54 @@
 	padding: 0;
 	margin: 0;
 	border: 0;
-	}
-  
-  a {
-  text-decoration: none;
 }
   
-  body {
-    font-family: $regular;
-    font-size: 18px;
-    line-height: 1.5em;
-    color: $grey;
-    background-color: $black;
-  }
+body {
+  font-family: $regular;
+  font-size: 18px;
+  line-height: 1.5em;
+  color: $grey;
+  background-color: $black;
+}
 
-  .container {
-    max-width: 1200px;
-    margin: 0 auto;
-  
-    @media (max-width: $mobile-size) {
-      padding-left: 20px;
-      padding-right: 20px;
-    }
-  }
-  
-  h1 {
-    @include title-style(60px, $bold);
-  
-    @media (max-width: $mobile-size) {
-      @include title-style(30px, $bold);
-    }
-  }
-  
-  h2 {
-    @include title-style(38px, $bold);
-  
-    @media (max-width: $mobile-size) {
-      @include title-style(18px, $bold);
-    }
-  }
+a {
+  text-decoration: none;
+}
 
-  li {
-    list-style-type: none; 
-   }
+li {
+  list-style-type: none; 
+} 
 
-   ul {
-    margin-left: 0; 
-    padding-left: 0;
-   }
+ul {
+  margin-left: 0; 
+  padding-left: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  
+  @media (max-width: $mobile-size) {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+  
+h1 {
+  @include title-style(60px);
+ 
+  @media (max-width: $mobile-size) {
+    @include title-style(30px);
+  }
+}
+  
+h2 {
+  @include title-style(38px);
+  
+  @media (max-width: $mobile-size) {
+    @include title-style(18px);
+  }
+}
 
 .text-white {
   color: $white;
@@ -60,6 +60,18 @@
   color: $grey;
 }
 
+.text-orange {
+  color: $orange;
+}
+
+.bg-free {
+  background: none;
+}
+
+@each $size in $text-size {
+  @include text-constructor($size)
+}
+
 .p-24 {
   @include padding-around(24px);
 }
@@ -67,6 +79,18 @@
 .p-16 {
   @include padding-around(16px);
 }
+
+.text-center {
+  text-align: center;
+}
+
+.btn {
+  border-radius: 5px;
+  border: 1px solid $grey;
+  display: block;
+  @extend .text-center;
+}
+
 
 
 
