@@ -91,6 +91,20 @@ h2 {
   @extend .text-center;
 }
 
+.section-title {
+  margin-top: 100px;
+  margin-bottom: 45px;
+  text-align: center;;
+
+}
+
+.text-capitalize {
+  text-transform: capitalize;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
 
 
 
