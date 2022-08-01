@@ -1,0 +1,62 @@
+.bg-gradient {
+    background: linear-gradient(89.75deg, #5328a1 32.83%, #95390c 81.56%);
+}
+
+.footer {
+    
+    &-top {
+        padding: 3rem 0;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 3%;
+
+        @media (max-width: $mobile-size)  {
+            grid-template-columns: repeat(1, 1fr);
+        }
+
+        &-info {
+            & h2 {
+                font-size: 18px;
+            }
+            & ul {
+                @media (max-width: $mobile-size)  {
+                    margin-top: 16px;
+                    margin-bottom: 30px;
+                }
+
+                & li {
+                    @extend .text-16;
+                    @extend .text-white;
+                }
+            }
+        }
+
+        &-social {
+            display: flex;
+           
+        }
+    } 
+
+    &-bottom {
+        padding: 2rem 0;
+        
+        & ul {
+        display: flex;
+         
+        & li {
+            padding-right: 16px;
+            @media (max-width: $mobile-size)  {
+                padding-top: 16px;
+            }
+        }
+
+        @media (max-width: $mobile-size)  {
+            flex-direction: column;
+        }
+        }
+    }
+}
+
+hr {
+    border: 1px solid $grey;
+}

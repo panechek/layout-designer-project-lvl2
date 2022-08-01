@@ -60,6 +60,10 @@ h2 {
   color: $grey;
 }
 
+.text-lgrey {
+  color: $light-grey;
+}
+
 .text-orange {
   color: $orange;
 }
@@ -113,6 +117,14 @@ h2 {
 
 .text-uppercase {
   text-transform: uppercase;
+}
+
+.pr-16 {
+  padding-right: 16px;
+}
+
+.pr-24 {
+  padding-right: 24px;
 }
 
 
