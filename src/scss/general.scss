@@ -91,6 +91,15 @@ h2 {
   @extend .text-center;
 }
 
+.btn-brown {
+  background: $brown;
+  border: none;
+}
+
+.btn-oval {
+  border-radius: 32px;
+}
+
 .section-title {
   margin-top: 100px;
   margin-bottom: 45px;
