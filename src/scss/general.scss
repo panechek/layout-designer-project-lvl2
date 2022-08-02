@@ -52,6 +52,10 @@ h2 {
   }
 }
 
+h3 {
+  @include title-style(18px);
+}
+
 .relative {
   position: relative;
 }
@@ -163,4 +167,6 @@ h2 {
   @include header-back($header, $path)
 }
 
-
+.bold {
+  font-weight: 700;
+}

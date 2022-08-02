@@ -95,6 +95,13 @@ h2 {
   }
 }
 
+h3 {
+  font-size: 18px;
+  line-height: 27px;
+  font-family: "Roboto Bold";
+  text-transform: uppercase;
+}
+
 .relative {
   position: relative;
 }
@@ -153,6 +160,12 @@ h2 {
   font-family: "Roboto Regular";
   font-size: 24px;
   line-height: 36px;
+}
+
+.text-18 {
+  font-family: "Roboto Regular";
+  font-size: 18px;
+  line-height: 27px;
 }
 
 .text-16, .footer-top-info ul li {
@@ -254,6 +267,10 @@ h2 {
 
 .header-artist {
   background-image: url("../images/Morten Harket.png");
+}
+
+.bold {
+  font-weight: 700;
 }
 
 .header {
@@ -653,6 +670,34 @@ hr {
   justify-content: space-between;
   width: 100%;
   align-items: center;
+}
+
+.discography-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-row-gap: 25px;
+}
+@media (max-width: 415px) {
+  .discography-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.discography-item {
+  width: min-content;
+}
+.discography-item img {
+  width: 250px;
+  height: 250px;
+}
+@media (max-width: 415px) {
+  .discography-item img {
+    width: 137px;
+    height: 137px;
+  }
+}
+.discography-item h3 {
+  text-transform: capitalize;
 }
 
 /*# sourceMappingURL=style.css.map */

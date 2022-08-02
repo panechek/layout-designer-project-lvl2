@@ -53,7 +53,7 @@ $items: 1, 2, 3;
   }
 }
 
-$text-size: 64, 56, 48, 40, 32, 24, 16, 13, 11;
+$text-size: 64, 56, 48, 40, 32, 24, 18, 16, 13, 11;
 
 @mixin text-constructor ($size) {
   .text-#{$size} {
