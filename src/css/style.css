@@ -700,4 +700,30 @@ hr {
   text-transform: capitalize;
 }
 
+.similar-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 50px;
+  grid-row-gap: 25px;
+  margin-bottom: 100px;
+}
+@media (max-width: 415px) {
+  .similar-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+.similar-list .similar-item {
+  width: min-content;
+}
+.similar-list .similar-item img {
+  width: 250px;
+  height: 250px;
+}
+@media (max-width: 415px) {
+  .similar-list .similar-item img {
+    width: 137px;
+    height: 137px;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */

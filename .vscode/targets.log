@@ -1,6 +1,4 @@
 make all --print-data-base --no-builtin-variables --no-builtin-rules --question
-make: *** No rule to make target 'all'.  Stop.
-
 # GNU Make 4.2.1
 # Built for x86_64-pc-linux-gnu
 # Copyright (C) 1988-2016 Free Software Foundation, Inc.
@@ -8,7 +6,7 @@ make: *** No rule to make target 'all'.  Stop.
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Thu Jul 28 14:43:16 2022
+# Make data base, printed on Tue Aug  2 22:12:48 2022
 
 # Variables
 
@@ -51,7 +49,7 @@ PATH = /home/panechek/.vscode-server/bin/3b889b090b5ad5793f524b5d1d39fda662b96a2
 # environment
 ELECTRON_RUN_AS_NODE = 1
 # environment
-VSCODE_IPC_HOOK_CLI = /tmp/vscode-ipc-0b8cc25c-137a-45b1-83d0-c59b902b2a4e.sock
+VSCODE_IPC_HOOK_CLI = /tmp/vscode-ipc-32a76f4f-f63d-4507-ad75-65d3687b0363.sock
 # default
 .FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell archives jobserver output-sync check-symlink load
 # environment
@@ -138,8 +136,10 @@ LANG = C
 TERM = xterm-256color
 # environment
 WSL_DISTRO_NAME = Ubuntu-20.04
+# environment
+MOTD_SHOWN = update-motd
 # variable set hash-table stats:
-# Load=63/1024=6%, Rehash=0, Collisions=4/88=5%
+# Load=64/1024=6%, Rehash=0, Collisions=4/89=4%
 
 # Pattern-specific Variable Values
 
@@ -221,6 +221,8 @@ sass:
 # strcache performance: lookups = 33 / hit rate = 24%
 # hash-table stats:
 # Load=25/8192=0%, Rehash=0, Collisions=1/33=3%
-# Finished Make data base on Thu Jul 28 14:43:16 2022
+# Finished Make data base on Tue Aug  2 22:12:48 2022
 
  
+make: *** No rule to make target 'all'.  Stop.
+

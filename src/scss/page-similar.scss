@@ -1,0 +1,23 @@
+.similar-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 50px;
+    grid-row-gap: 25px;
+    margin-bottom: 100px;
+    @media (max-width: $mobile-size)  {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .similar-item {
+        width: min-content;
+        & img {
+            width: 250px;
+            height: 250px;
+            @media (max-width: $mobile-size)  {
+                width: 137px;
+                height: 137px;
+            }
+
+        }
+    }
+}
