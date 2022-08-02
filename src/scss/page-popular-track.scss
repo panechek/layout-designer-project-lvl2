@@ -1,0 +1,27 @@
+.popular-track-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+}
+
+.popular-track{
+  display: flex;
+    width: 48%;
+    margin-bottom: 25px;
+    @media (max-width: $mobile-size)  {
+        width: 100%;
+    }
+    & img {
+        margin-right: 15px;
+        width: 55px;
+        height: 55px;
+    }
+
+    .track-info {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        align-items: center;
+    }
+}

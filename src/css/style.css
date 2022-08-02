@@ -236,6 +236,10 @@ h2 {
   text-transform: uppercase;
 }
 
+.text-start {
+  text-align: start;
+}
+
 .pr-16 {
   padding-right: 16px;
 }
@@ -404,11 +408,11 @@ svg {
 }
 
 .mr-24 {
-  margin-right: 24px;
+  margin-right: 1.5rem;
 }
 @media (max-width: 415px) {
   .mr-24 {
-    margin-bottom: 24px;
+    margin-bottom: 1.5rem;
   }
 }
 
@@ -621,6 +625,34 @@ svg {
 
 hr {
   border: 1px solid #cacaca;
+}
+
+.popular-track-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.popular-track {
+  display: flex;
+  width: 48%;
+  margin-bottom: 25px;
+}
+@media (max-width: 415px) {
+  .popular-track {
+    width: 100%;
+  }
+}
+.popular-track img {
+  margin-right: 15px;
+  width: 55px;
+  height: 55px;
+}
+.popular-track .track-info {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
 }
 
 /*# sourceMappingURL=style.css.map */
