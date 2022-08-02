@@ -1,12 +1,238 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Портал «Music Box» Anna Merkulova</title>
+
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    
+    <header >
+        <div class="container relative">
+            <div class="header">
+                <div class="header-main">
+                    <a href="#" class="logo">
+                        <img src="./images/logo.svg" alt="Ноты">
+                        <p class="name  text-white">Music Box</p>
+                    </a>
+                    <nav class="nav">
+                        <ul>
+                            <li><a class="text-white" href="#">Главная</a></li>
+                            <li><a class="text-grey" href="#">Каталог</a></li>
+                            <li><a class="text-grey" href="#">Исполнители</a></li>
+                            <li><a class="text-grey" href="#">Контакты</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <input type="text" placeholder="Поиск...">
+            </div>
+        </div>
+    </header>
+    <section id="page-description" class="header-artist">
+        <div class="container content ai-start">
+            <h1 class="text-white">Morten Harket</h1>
+            <p class="text-white">
+                24 875 поклонников
+            </p>
+            <div class="btn-group">
+                <button class="btn btn-purple btn-svg mr-24" type="submit">
+                    <?xml version="1.0" encoding="iso-8859-1"?>
+                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+<g>
+	<g>
+		<g>
+			<path d="M256,0C114.833,0,0,114.844,0,256s114.833,256,256,256s256-114.844,256-256S397.167,0,256,0z M256,490.667
+				C126.604,490.667,21.333,385.396,21.333,256S126.604,21.333,256,21.333S490.667,126.604,490.667,256S385.396,490.667,256,490.667
+				z"/>
+			<path d="M357.771,247.031l-149.333-96c-3.271-2.135-7.5-2.25-10.875-0.396C194.125,152.51,192,156.094,192,160v192
+				c0,3.906,2.125,7.49,5.563,9.365c1.583,0.865,3.354,1.302,5.104,1.302c2,0,4.021-0.563,5.771-1.698l149.333-96
+				c3.042-1.958,4.896-5.344,4.896-8.969S360.813,248.99,357.771,247.031z M213.333,332.458V179.542L332.271,256L213.333,332.458z"
+				/>
+		</g>
+	</g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+                        </svg>
+                        МИКС
+                </button>
+                <button class="btn btn-brown btn-svg" type="submit">
+                    <svg viewBox="0 -28 512.001 512" xmlns="http://www.w3.org/2000/svg"><path d="m256 455.515625c-7.289062 0-14.316406-2.640625-19.792969-7.4375-20.683593-18.085937-40.625-35.082031-58.21875-50.074219l-.089843-.078125c-51.582032-43.957031-96.125-81.917969-127.117188-119.3125-34.644531-41.804687-50.78125-81.441406-50.78125-124.742187 0-42.070313 14.425781-80.882813 40.617188-109.292969 26.503906-28.746094 62.871093-44.578125 102.414062-44.578125 29.554688 0 56.621094 9.34375 80.445312 27.769531 12.023438 9.300781 22.921876 20.683594 32.523438 33.960938 9.605469-13.277344 20.5-24.660157 32.527344-33.960938 23.824218-18.425781 50.890625-27.769531 80.445312-27.769531 39.539063 0 75.910156 15.832031 102.414063 44.578125 26.191406 28.410156 40.613281 67.222656 40.613281 109.292969 0 43.300781-16.132812 82.9375-50.777344 124.738281-30.992187 37.398437-75.53125 75.355469-127.105468 119.308594-17.625 15.015625-37.597657 32.039062-58.328126 50.167969-5.472656 4.789062-12.503906 7.429687-19.789062 7.429687zm-112.96875-425.523437c-31.066406 0-59.605469 12.398437-80.367188 34.914062-21.070312 22.855469-32.675781 54.449219-32.675781 88.964844 0 36.417968 13.535157 68.988281 43.882813 105.605468 29.332031 35.394532 72.960937 72.574219 123.476562 115.625l.09375.078126c17.660156 15.050781 37.679688 32.113281 58.515625 50.332031 20.960938-18.253907 41.011719-35.34375 58.707031-50.417969 50.511719-43.050781 94.136719-80.222656 123.46875-115.617188 30.34375-36.617187 43.878907-69.1875 43.878907-105.605468 0-34.515625-11.605469-66.109375-32.675781-88.964844-20.757813-22.515625-49.300782-34.914062-80.363282-34.914062-22.757812 0-43.652344 7.234374-62.101562 21.5-16.441406 12.71875-27.894532 28.796874-34.609375 40.046874-3.453125 5.785157-9.53125 9.238282-16.261719 9.238282s-12.808594-3.453125-16.261719-9.238282c-6.710937-11.25-18.164062-27.328124-34.609375-40.046874-18.449218-14.265626-39.34375-21.5-62.097656-21.5zm0 0"/></svg>
+                    В ИЗБРАННОЕ
+                </button>
+           </div>
+        </div>
+    </section>
+    <section id="page-pricing">
+        <div class="container">
+            <h2 class="section-title">
+                Формы подписки
+            </h2>
+            <div class="pricing">
+                <div class="pricing-item item-1">
+                    <h3 class="text-center text-24">Бесплатная</h3>
+                    <p class="pricing-value text-64 text-center">0<span class="text-32">РУБ.</span></p>
+                    <a href="#" class="btn text-16 text-white">Оформить</a>
+                    <p class="pricing-footer text-center">Оплата в месяц. Бесплатный тариф предоставляет доступ ко всей коллекции музыки. Присутствует реклама</p>
+                </div>
+                <div class="pricing-item item-2 pricing-item-center">
+                    <h3 class="text-center text-24">Стандартная</h3>
+                    <p class="pricing-value text-64 text-center">250<span class="text-32">РУБ.</span></p>
+                    <a href="#" class="btn text-16 text-white">Оформить</a>
+                    <p class="pricing-footer text-center">Оплата в месяц. Стандартный тариф предоставляет доступ ко всей коллекции музыки в среднем качестве</p>
+                </div>
+                <div class="pricing-item item-3">
+                  <h3 class="text-center text-24">Премиум</h3>
+                  <p class="pricing-value text-64 text-center">500<span class="text-32">РУБ.</span></p>
+                  <a href="#" class="btn text-16 text-white">Оформить</a>
+                  <p class="pricing-footer text-center">Оплата в месяц. Премиум тариф предоставляет доступ ко всей коллекции музыки в высоком качестве</p>
+                </div>  
+            </div>
+            <p class="text-center">
+                На всех тарифах возможно прослушивание музыки с мобильных устройств. На премиум тарифе вы можете скачать все композиции на ваше устройство и слушать музыку без подключения к интернету
+            </p>
+        </div>
+    </section>
+    <section id="page-news">
+        <div class="container">
+            <h2 class="section-title">
+                Последние новости
+            </h2>
+            <article class="news-item">
+                <img src="./images/Music to Be Murdered By.png" alt="Не забудьте про alt">
+                <div class="news-item-content">
+                    <div class="news-body">
+                        <h3 class="text-capitalize">Music to be murdered by</h3>
+                        <p class="text-16">Новый альбом Eminem «Music to Be Murdered By» уже доступен в нашем сервисе. На альбоме вас ждёт 20 новых треков.</p>
+                    </div>
+                    <div class="news-footer">
+                        <div class="news-author">
+                            <img src="./images/avatar.png" alt="Мужчина">
+                            <p class="text-uppercase text-orange">Music box</p>
+                            <p class="data">17/01/2020</p>
+                        </div>
+                        <a href="#" class="btn text-white">К альбому</a>
+                    </div>
+                </div>
+              </article>
+              <article class="news-item news-item-back">
+                <img src="./images/Ordinary Man.png" alt="Не забудьте про alt">
+                <div class="news-item-content">
+                    <div class="news-body">
+                        <h3 class="text-capitalize">Ordinary Man</h3>
+                        <p class="text-16">Легенда рока Оззи Озборн спустя 10 лет выпустил новый альбом Ordinary Man. Слушайте в числе первых на Music Box</p>
+                    </div>
+                    <div class="news-footer">
+                        <div class="news-author">
+                            <img src="./images/avatar.png" alt="Мужчина">
+                            <p class="text-uppercase text-orange">Music box</p>
+                            <p class="data">17/01/2020</p>
+                        </div>
+                        <a href="#" class="btn text-white">К альбому</a>
+                    </div>
+                </div>
+                
+              </article>
+        </div>
+    </section>
+    <section class="page-app">
+        <div class="container">
+            <h2 class="section-title">
+                Мобильное приложение
+            </h2>
+            <div class="page-app-content">
+                <p>
+                    Воспользуйтесь нашим мобильным приложением. Оно позволит слушать музыку с любого устройства на базе операционных систем Androind и iOS
+                    <br>
+                    <br>
+                    С тарифом «Премиум» приложение позволяет скачивать все композиции из нашей коллекции. Вы можете слушать музыку даже без интернета.
+                </p>
+                <a href="#" class="btn btn-brown text-white btn-oval">Скачать</a>
+                <img src="./images/iphone.png" alt="Три телефона">
+            </div>
+        </div>
+    </section>
+    <footer class="bg-gradient footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-top-info">
+                    <h2 class="text-white">О нас</h2>
+                    <ul>
+                        <li><a href="#" class="text-16 text-lgrey">История компании</a></li>
+                        <li><a href="#" class="text-16 text-lgrey">Карьера</a></li>
+                        <li><a href="#" class="text-16 text-lgrey">Особенности</a></li>
+                        <li><a href="#" class="text-16 text-lgrey">Пресса</a></li>
+                    </ul>
+                </div>
+                <div class="footer-top-info">
+                    <h2 class="text-white">Поддержка</h2>
+                    <ul>
+                        <li><a href="#" class="text-16 text-lgrey">База знаний</a></li>
+                        <li><a href="#" class="text-16 text-lgrey">Тарифы</a></li>
+                        <li><a href="#" class="text-16 text-lgrey">Мобильное приложение</a></li>
+                        <li><a href="#" class="text-16 text-lgrey">Условия использования</a></li>
+                    </ul>
+                </div>
+                <div class="footer-top-info">
+                    <h2 class="text-white">Контакты</h2>
+                    <ul>
+                        <li><a href="#" class="text-16 text-lgrey">hello@music.box</a></li>
+                        <li><a href="#" class="text-16 text-lgrey">Russia, Moscow. Music Box studio</a></li>
+                        <li><a href="#" class="text-16 text-lgrey">+ 7 499 999 99 99</a></li>
+                    </ul>
+                </div>
+                <div class="footer-top-info">
+                    <h2 class="text-white">Подписывайтесь</h2>
+                    <ul class="footer-top-social">
+                        <li class="pr-24"><a href="#"><img src="./images/Google+.png" alt="Goole sign"></a></li>
+                        <li class="pr-24"><a href="#"><img src="./images/Twitter.png" alt="Tvitter sign"></a></li>
+                        <li class="pr-24"><a href="#"><img src="./images/Facebook.png" alt="Facebook sign"></a></li>
+                        <li class="pr-24"><a href="#"><img src="./images/Instagram.png" alt="Instagram sign"></a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr />
+            <div class="footer-bottom">
+                <ul>
+                    <li><a href="#" class="text-16 text-lgrey">Магазин</a></li>
+                    <li><a href="#" class="text-16 text-lgrey">Обслуживание</a></li>
+                    <li><a href="#" class="text-16 text-lgrey">Блог</a></li>
+                    <li><a href="#" class="text-16 text-lgrey">Поддержка</a></li>
+                    <li><a href="#" class="text-16 text-lgrey">Контакты</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>

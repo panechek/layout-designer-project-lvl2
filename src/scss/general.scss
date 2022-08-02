@@ -7,7 +7,7 @@
   
 body {
   font-family: $regular;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1.5em;
   color: $grey;
   background-color: $black;
@@ -31,8 +31,8 @@ ul {
   margin: 0 auto;
   
   @media (max-width: $mobile-size) {
-    padding-left: 20px;
-    padding-right: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
   }
 }
   
@@ -50,6 +50,10 @@ h2 {
   @media (max-width: $mobile-size) {
     @include title-style(18px);
   }
+}
+
+.relative {
+  position: relative;
 }
 
 .text-white {
@@ -89,10 +93,16 @@ h2 {
 }
 
 .btn {
+  color: $white;
   border-radius: 5px;
   border: 1px solid $grey;
   display: block;
+  text-transform: uppercase;
+  padding-top: 21px;
+  padding-bottom: 21px;
   @extend .text-center;
+  width: 100%;
+  height: fit-content;
 }
 
 .btn-brown {
@@ -100,8 +110,26 @@ h2 {
   border: none;
 }
 
+.btn-green {
+  background: $green;
+  border: none;
+}
+
+.btn-purple {
+  background: $purple;
+  border: none;
+}
+
 .btn-oval {
   border-radius: 32px;
+}
+
+.btn-group {
+  @extend %flex-between;
+
+  @media (max-width: $mobile-size)  {
+    flex-direction: column;
+  }
 }
 
 .section-title {
@@ -127,6 +155,8 @@ h2 {
   padding-right: 24px;
 }
 
-
+@each $header,$path in $header-backs {
+  @include header-back($header, $path)
+}
 
 

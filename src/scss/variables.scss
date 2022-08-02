@@ -63,3 +63,15 @@ $text-size: 64, 56, 48, 40, 32, 24, 16, 13, 11;
   }
 }
 
+$header-backs: (
+  "home": "../images/banner.png",
+  "artist": "../images/Morten Harket.png",
+);
+
+@mixin header-back($header-name, $header-path) {
+  .header-#{$header-name} {
+    background-image: url("#{$header-path}");
+    @extend %background-cover;
+  }
+ }
+

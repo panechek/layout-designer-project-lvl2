@@ -16,12 +16,12 @@
   font-weight: 400;
   font-style: normal;
 }
-#page-pricing .pricing, #page-description form .login, .header-main .nav ul, .header-main .logo, .header-main, .header {
+#page-pricing .pricing, #page-description .content form .login, .header-main .nav ul, .header-main .logo, .header-main, .header, .btn-group {
   display: flex;
   justify-content: space-between;
 }
 
-header {
+.header-artist, .header-home {
   background-position: center;
   background-size: cover;
 }
@@ -35,7 +35,7 @@ header {
 
 body {
   font-family: "Roboto Regular";
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1.5em;
   color: #cacaca;
   background-color: #08020d;
@@ -60,8 +60,8 @@ ul {
 }
 @media (max-width: 415px) {
   .container {
-    padding-left: 20px;
-    padding-right: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
   }
 }
 
@@ -93,6 +93,10 @@ h2 {
     font-family: "Roboto Bold";
     text-transform: uppercase;
   }
+}
+
+.relative {
+  position: relative;
 }
 
 .text-white, .footer-top-info ul li {
@@ -182,9 +186,15 @@ h2 {
 }
 
 .btn {
+  color: #ffffff;
   border-radius: 5px;
   border: 1px solid #cacaca;
   display: block;
+  text-transform: uppercase;
+  padding-top: 21px;
+  padding-bottom: 21px;
+  width: 100%;
+  height: fit-content;
 }
 
 .btn-brown {
@@ -192,8 +202,24 @@ h2 {
   border: none;
 }
 
+.btn-green {
+  background: #34c176;
+  border: none;
+}
+
+.btn-purple {
+  background: #5328a1;
+  border: none;
+}
+
 .btn-oval {
   border-radius: 32px;
+}
+
+@media (max-width: 415px) {
+  .btn-group {
+    flex-direction: column;
+  }
 }
 
 .section-title {
@@ -218,13 +244,18 @@ h2 {
   padding-right: 24px;
 }
 
-header {
+.header-home {
   background-image: url("../images/banner.png");
-  width: 100%;
-  padding-top: 13px;
+}
+
+.header-artist {
+  background-image: url("../images/Morten Harket.png");
 }
 
 .header {
+  position: absolute;
+  top: 25px;
+  width: 100%;
   align-items: center;
 }
 @media (max-width: 415px) {
@@ -299,70 +330,86 @@ header {
   color: #757575;
 }
 
-#page-description {
-  padding: 200px 0;
+#page-description .content {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 200px 0;
 }
 @media (max-width: 415px) {
-  #page-description {
-    padding: 0;
+  #page-description .content {
     text-align: center;
-    margin-top: 78px;
+    padding-top: 250px;
     padding-bottom: 201px;
   }
 }
-#page-description p {
+#page-description .content p {
   margin-top: 31px;
   margin-bottom: 17px;
 }
-@media (max-width: 415px) {
-  #page-description p {
-    font-size: 16px;
-  }
-}
-#page-description form {
+#page-description .content form {
   max-width: 570px;
   width: 100%;
 }
 @media (max-width: 415px) {
-  #page-description form .login {
+  #page-description .content form .login {
     flex-direction: column;
   }
 }
-#page-description form .login :first-child {
+#page-description .content form .login :first-child {
   margin-right: 3%;
 }
 @media (max-width: 415px) {
-  #page-description form .login :first-child {
+  #page-description .content form .login :first-child {
     margin-right: 0;
   }
 }
-#page-description form .login input {
+#page-description .content form .login input {
   min-width: 270px;
   min-height: 50px;
   margin-bottom: 1.5rem;
   border: 2px solid #cacaca;
   border-radius: 3px;
 }
-#page-description form .login input::placeholder {
+#page-description .content form .login input::placeholder {
   padding-left: 20px;
   font-family: "Roboto Bold";
   font-size: 14px;
   line-height: 16px;
   color: #ffffff;
 }
-#page-description form .btn {
+#page-description .content form .btn-arial {
   width: 100%;
-  padding: 20px 30px;
-  border-radius: 5px;
-  background-color: #34c176;
   font-family: "Arial";
   font-weight: 400;
   font-size: 13.3px;
   line-height: 15px;
-  text-transform: uppercase;
+}
+#page-description .ai-start {
+  align-items: start;
+}
+
+svg {
+  fill: #ffffff;
+  width: 24px;
+  height: 24px;
+  margin-right: 16px;
+}
+
+.btn-svg {
+  display: flex;
+  align-items: center;
+  width: 200px;
+  padding-left: 30px;
+}
+
+.mr-24 {
+  margin-right: 24px;
+}
+@media (max-width: 415px) {
+  .mr-24 {
+    margin-bottom: 24px;
+  }
 }
 
 #page-pricing .pricing {

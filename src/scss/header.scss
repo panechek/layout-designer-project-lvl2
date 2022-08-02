@@ -1,163 +1,87 @@
-header {
-  background-image: url('../images/banner.png');
-  @extend %background-cover;
-  width: 100%;
-  padding-top: 13px
-}
 
 .header {
+  position: absolute;
+  top: 25px;
+  width: 100%;
+  
   @include flex-between-item-center;
-
-  @media (max-width: $mobile-size)  {
-    flex-direction: column;
-    align-items: start;
-  }
-
-  &-main {
-    @include flex-between-item-center;
-
+  
     @media (max-width: $mobile-size)  {
       flex-direction: column;
       align-items: start;
     }
-
-    & .logo {
+  
+    &-main {
       @include flex-between-item-center;
-      @include padding-around(12px);
-      padding-left: 0;
-
-      & .name {
-        @extend .text-11;
-        text-transform: uppercase;
-        padding-left: 16px;
+  
+      @media (max-width: $mobile-size)  {
+        flex-direction: column;
+        align-items: start;
       }
-
-      & img {
-        height: 24px;
-        width: 24px;
-      }
-    }
-
-    & .nav {
-      & ul { 
+  
+      & .logo {
         @include flex-between-item-center;
-        padding-left: 66px;
-
-        @media (max-width: $mobile-size)  {
-          flex-direction: column;
-          align-items: start;
-          padding-left: 0;
-          margin-bottom: 18px;
-          margin-top: 5px;
-        }
-
-        & li {
+        @include padding-around(12px);
+        padding-left: 0;
+  
+        & .name {
           @extend .text-11;
-          @include padding-around(12px);
           text-transform: uppercase;
-
+          padding-left: 16px;
+        }
+  
+        & img {
+          height: 24px;
+          width: 24px;
+        }
+      }
+  
+      & .nav {
+        & ul { 
+          @include flex-between-item-center;
+          padding-left: 66px;
+  
           @media (max-width: $mobile-size)  {
-            padding: 0;
+            flex-direction: column;
+            align-items: start;
+            padding-left: 0;
+            margin-bottom: 18px;
+            margin-top: 5px;
+          }
+  
+          & li {
+            @extend .text-11;
+            @include padding-around(12px);
+            text-transform: uppercase;
+  
+            @media (max-width: $mobile-size)  {
+              padding: 0;
+            }
           }
         }
       }
     }
-  }
-
-  & input {
-    width: 248px;
-    height: 25px;
-    background: $dark-grey;
-    border-radius: 50px;
-
-    @media (max-width: $mobile-size)  {
-      width: 100%;
-    }
   
-    &::placeholder {
-      font-family: 'Arial';
-      font-style: normal;
-      font-weight: 400;
-      font-size: 13.3px;
-      line-height: 15px;
-      text-transform: uppercase;
-      padding-left: 10px;
-
-      color: #757575;
-    }
-  }
-}
-
-#page-description {
-  padding: 200px 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
-  @media (max-width: $mobile-size)  {
-    padding: 0;
-    text-align: center;
-    margin-top: 78px;
-    padding-bottom: 201px;
-  }
-
-  & p {
-    margin-top: 31px;
-    margin-bottom: 17px;
-
-    @media (max-width: $mobile-size)  {
-      font-size: 16px;
-    }
-  }
-
-  & form {
-    max-width: 570px;
-    width: 100%;
-
-    & .login {
-      @extend %flex-between;
-
+    & input {
+      width: 248px;
+      height: 25px;
+      background: $dark-grey;
+      border-radius: 50px;
+  
       @media (max-width: $mobile-size)  {
-        flex-direction: column;
+        width: 100%;
       }
-
-      & :first-child {
-        margin-right: 3%;
-
-        @media (max-width: $mobile-size)  {
-          margin-right: 0;
-        }
+    
+      &::placeholder {
+        font-family: 'Arial';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 13.3px;
+        line-height: 15px;
+        text-transform: uppercase;
+        padding-left: 10px;
+  
+        color: #757575;
       }
-
-      & input {
-        min-width: 270px;
-        min-height: 50px;
-        margin-bottom: 1.5rem;
-        border: 2px solid $grey;
-        border-radius: 3px;
-
-        &::placeholder {
-          padding-left: 20px;
-          font-family: 'Roboto Bold';
-          font-size: 14px;
-          line-height: 16px;
-          color: $white;
-        }
-      }
-
-    }
-
-    & .btn {
-      width: 100%;
-      padding: 20px 30px;
-      border-radius: 5px;
-      background-color: $green;
-      font-family: 'Arial';
-      font-weight: 400;
-      font-size: 13.3px;
-      line-height: 15px;
-      text-transform: uppercase;
     }
   }
-}
-
