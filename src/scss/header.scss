@@ -20,7 +20,8 @@
     }
   
     & .logo {
-      @include flex-between-item-center;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
       & img {
         height: 24px;
         width: 24px;
