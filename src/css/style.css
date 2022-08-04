@@ -16,7 +16,7 @@
   font-weight: 400;
   font-style: normal;
 }
-#page-pricing .pricing, .header-main .nav, .header-main .logo, .btn-group {
+#page-pricing .pricing, .header-main .nav, .btn-group {
   display: flex;
   justify-content: space-between;
 }
@@ -313,7 +313,8 @@ section {
   }
 }
 .header-main .logo {
-  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
 }
 .header-main .logo img {
   height: 24px;
