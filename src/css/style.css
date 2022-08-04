@@ -16,7 +16,7 @@
   font-weight: 400;
   font-style: normal;
 }
-#page-pricing .pricing, .header-main .nav, .btn-group {
+#page-pricing .pricing, .header-main .nav {
   display: flex;
   justify-content: space-between;
 }
@@ -222,8 +222,8 @@ h3 {
   border: 1px solid #cacaca;
   display: block;
   text-transform: uppercase;
-  padding-top: 21px;
-  padding-bottom: 21px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   width: 100%;
   height: fit-content;
 }
@@ -247,6 +247,9 @@ h3 {
   border-radius: 32px;
 }
 
+.btn-group {
+  display: flex;
+}
 @media (max-width: 415px) {
   .btn-group {
     flex-direction: column;
@@ -364,6 +367,9 @@ section {
   color: #757575;
 }
 
+#page-description {
+  padding: 0;
+}
 #page-description .content {
   text-align: center;
   padding: 200px 0;
@@ -420,7 +426,7 @@ section {
   line-height: 15px;
 }
 #page-description .ai-start {
-  align-items: start;
+  text-align: start;
 }
 
 svg {
@@ -435,6 +441,7 @@ svg {
   align-items: center;
   width: 200px;
   padding-left: 30px;
+  padding-right: 30px;
 }
 
 .mr-24 {

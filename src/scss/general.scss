@@ -121,8 +121,8 @@ h3 {
   border: 1px solid $grey;
   display: block;
   text-transform: uppercase;
-  padding-top: 21px;
-  padding-bottom: 21px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   @extend .text-center;
   width: 100%;
   height: fit-content;
@@ -148,7 +148,7 @@ h3 {
 }
 
 .btn-group {
-  @extend %flex-between;
+  display: flex;
 
   @media (max-width: $mobile-size)  {
     flex-direction: column;
