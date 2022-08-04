@@ -61,6 +61,10 @@ li {
   margin: 0;
 }
 
+li {
+  list-style-type: none;
+}
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -254,7 +258,7 @@ section {
 }
 
 .section-title {
-  margin-bottom: 45px;
+  margin-bottom: 48px;
   text-align: center;
 }
 
@@ -698,6 +702,7 @@ hr {
 .discography-item img {
   width: 250px;
   height: 250px;
+  margin-bottom: 18px;
 }
 @media (max-width: 415px) {
   .discography-item img {
@@ -723,15 +728,18 @@ hr {
 }
 .similar-list .similar-item {
   width: min-content;
+  text-align: center;
 }
 .similar-list .similar-item img {
   width: 250px;
   height: 250px;
+  margin-bottom: 17px;
 }
 @media (max-width: 415px) {
   .similar-list .similar-item img {
     width: 137px;
     height: 137px;
+    margin-bottom: 18px;
   }
 }
 

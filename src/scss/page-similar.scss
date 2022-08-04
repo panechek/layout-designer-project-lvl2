@@ -10,12 +10,15 @@
 
     .similar-item {
         width: min-content;
+        text-align: center;
         & img {
             width: 250px;
             height: 250px;
+            margin-bottom: 17px;
             @media (max-width: $mobile-size)  {
                 width: 137px;
                 height: 137px;
+                margin-bottom: 18px;
             }
 
         }

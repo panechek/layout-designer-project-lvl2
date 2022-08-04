@@ -33,6 +33,10 @@ li {
   margin: 0;
 } 
 
+li {
+  list-style-type: none;
+}
+
 
 .container {
   max-width: 1200px;
@@ -156,7 +160,7 @@ section {
 }
 
 .section-title {
-  margin-bottom: 45px;
+  margin-bottom: 48px;
   text-align: center;;
 
 }
