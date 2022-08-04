@@ -3,85 +3,70 @@
   position: absolute;
   top: 25px;
   width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   
-  @include flex-between-item-center;
+  @media (max-width: $mobile-size)  {
+    grid-template-columns: repeat(1, 1fr);
+    align-items: start;
+  }
+  
+  &-main {
+    display: flex;
   
     @media (max-width: $mobile-size)  {
       flex-direction: column;
       align-items: start;
     }
   
-    &-main {
+    & .logo {
       @include flex-between-item-center;
-  
-      @media (max-width: $mobile-size)  {
-        flex-direction: column;
-        align-items: start;
-      }
-  
-      & .logo {
-        @include flex-between-item-center;
-        @include padding-around(12px);
-        padding-left: 0;
-  
-        & .name {
-          @extend .text-11;
-          text-transform: uppercase;
-          padding-left: 16px;
-        }
-  
-        & img {
-          height: 24px;
-          width: 24px;
-        }
-      }
-  
-      & .nav {
-        & ul { 
-          @include flex-between-item-center;
-          padding-left: 66px;
-  
-          @media (max-width: $mobile-size)  {
-            flex-direction: column;
-            align-items: start;
-            padding-left: 0;
-            margin-bottom: 18px;
-            margin-top: 5px;
-          }
-  
-          & li {
-            @extend .text-11;
-            @include padding-around(12px);
-            text-transform: uppercase;
-  
-            @media (max-width: $mobile-size)  {
-              padding: 0;
-            }
-          }
-        }
+      & img {
+        height: 24px;
+        width: 24px;
+        margin-right: 16px;
       }
     }
   
-    & input {
-      width: 248px;
-      height: 25px;
-      background: $dark-grey;
-      border-radius: 50px;
+      
+    .nav { 
+      @include flex-between-item-center;
+      margin-left: 66px;
+      & li {
+        margin-right: 24px;
+      }
   
       @media (max-width: $mobile-size)  {
-        width: 100%;
-      }
-    
-      &::placeholder {
-        font-family: 'Arial';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 13.3px;
-        line-height: 15px;
-        text-transform: uppercase;
-        padding-left: 10px;
-  
-        color: #757575;
+        margin-left: 0;
+        flex-direction: column;
+        align-items: start;
+        margin-bottom: 18px;
+        margin-top: 5px;
       }
     }
   }
+  
+  & input {
+    width: 248px;
+    height: 25px;
+    background: $dark-grey;
+    border-radius: 50px;
+    justify-self: end;
+  
+    @media (max-width: $mobile-size)  {
+      width: 100%;
+    }
+    
+    &::placeholder {
+      font-family: 'Arial';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 13.3px;
+      line-height: 15px;
+      text-transform: uppercase;
+      padding-left: 10px;
+  
+      color: #757575;
+    }
+  }
+}

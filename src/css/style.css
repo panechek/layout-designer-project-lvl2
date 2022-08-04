@@ -16,7 +16,7 @@
   font-weight: 400;
   font-style: normal;
 }
-#page-pricing .pricing, #page-description .content form .login, .header-main .nav ul, .header-main .logo, .header-main, .header, .btn-group {
+#page-pricing .pricing, .header-main .nav, .header-main .logo, .btn-group {
   display: flex;
   justify-content: space-between;
 }
@@ -122,6 +122,13 @@ h3 {
   color: #f89202;
 }
 
+.text-11-upper {
+  line-height: 13px;
+  font-family: "Roboto Regular";
+  font-size: 11px;
+  text-transform: uppercase;
+}
+
 .bg-free {
   background: none;
 }
@@ -180,7 +187,7 @@ h3 {
   line-height: 19.5px;
 }
 
-.text-11, .header-main .nav ul li, .header-main .logo .name {
+.text-11 {
   font-family: "Roboto Regular";
   font-size: 11px;
   line-height: 16.5px;
@@ -236,7 +243,7 @@ h3 {
 }
 
 section {
-  margin-bottom: 100px;
+  margin-top: 100px;
 }
 
 .section-title {
@@ -280,16 +287,17 @@ section {
   position: absolute;
   top: 25px;
   width: 100%;
-  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
 }
 @media (max-width: 415px) {
   .header {
-    flex-direction: column;
+    grid-template-columns: repeat(1, 1fr);
     align-items: start;
   }
 }
 .header-main {
-  align-items: center;
+  display: flex;
 }
 @media (max-width: 415px) {
   .header-main {
@@ -299,37 +307,26 @@ section {
 }
 .header-main .logo {
   align-items: center;
-  padding: 12px;
-  padding-left: 0;
-}
-.header-main .logo .name {
-  text-transform: uppercase;
-  padding-left: 16px;
 }
 .header-main .logo img {
   height: 24px;
   width: 24px;
+  margin-right: 16px;
 }
-.header-main .nav ul {
+.header-main .nav {
   align-items: center;
-  padding-left: 66px;
+  margin-left: 66px;
+}
+.header-main .nav li {
+  margin-right: 24px;
 }
 @media (max-width: 415px) {
-  .header-main .nav ul {
+  .header-main .nav {
+    margin-left: 0;
     flex-direction: column;
     align-items: start;
-    padding-left: 0;
     margin-bottom: 18px;
     margin-top: 5px;
-  }
-}
-.header-main .nav ul li {
-  padding: 12px;
-  text-transform: uppercase;
-}
-@media (max-width: 415px) {
-  .header-main .nav ul li {
-    padding: 0;
   }
 }
 .header input {
@@ -337,6 +334,7 @@ section {
   height: 25px;
   background: #3c3b3d;
   border-radius: 50px;
+  justify-self: end;
 }
 @media (max-width: 415px) {
   .header input {
@@ -354,44 +352,47 @@ section {
   color: #757575;
 }
 
+#page-description {
+  margin-top: 0;
+}
 #page-description .content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  text-align: center;
   padding: 200px 0;
 }
 @media (max-width: 415px) {
   #page-description .content {
-    text-align: center;
     padding-top: 250px;
-    padding-bottom: 201px;
   }
 }
 #page-description .content p {
   margin-top: 31px;
-  margin-bottom: 17px;
+  margin-bottom: 16px;
+}
+@media (max-width: 415px) {
+  #page-description .content p {
+    margin-top: 16px;
+  }
 }
 #page-description .content form {
+  margin: 0 auto;
   max-width: 570px;
   width: 100%;
 }
+#page-description .content form .login {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1.5rem;
+  margin: 1.5rem 0;
+}
 @media (max-width: 415px) {
   #page-description .content form .login {
-    flex-direction: column;
-  }
-}
-#page-description .content form .login :first-child {
-  margin-right: 3%;
-}
-@media (max-width: 415px) {
-  #page-description .content form .login :first-child {
-    margin-right: 0;
+    grid-template-columns: repeat(1, 1fr);
+    grid-column-gap: 1.5rem;
   }
 }
 #page-description .content form .login input {
   min-width: 270px;
   min-height: 50px;
-  margin-bottom: 1.5rem;
   border: 2px solid #cacaca;
   border-radius: 3px;
 }

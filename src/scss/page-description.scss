@@ -1,46 +1,39 @@
 #page-description {
+  margin-top: 0;
   & .content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 200px 0;
-
-  
+    text-align: center;
+    padding: 200px 0;
 
   @media (max-width: $mobile-size)  {
-    text-align: center;
     padding-top: 250px;
-    padding-bottom: 201px;
   }
 
   & p {
     margin-top: 31px;
-    margin-bottom: 17px;
+    margin-bottom: 16px;
+    @media (max-width: $mobile-size)  {
+      margin-top: 16px;
+    }
   }
 
   & form {
+    margin: 0 auto;
     max-width: 570px;
     width: 100%;
 
     & .login {
-      @extend %flex-between;
-
-      @media (max-width: $mobile-size)  {
-        flex-direction: column;
-      }
-
-      & :first-child {
-        margin-right: 3%;
-
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 1.5rem;
+        margin: 1.5rem 0;
         @media (max-width: $mobile-size)  {
-          margin-right: 0;
+          grid-template-columns: repeat(1, 1fr);
+          grid-column-gap: 1.5rem;
         }
-      }
 
       & input {
         min-width: 270px;
         min-height: 50px;
-        margin-bottom: 1.5rem;
         border: 2px solid $grey;
         border-radius: 3px;
 
@@ -82,8 +75,6 @@ svg {
   width: 200px;
   padding-left: 30px;
 }
-
-
 
 .mr-24 {
   margin-right: 1.5rem;
