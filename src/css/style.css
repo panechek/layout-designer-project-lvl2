@@ -250,7 +250,7 @@ h3 {
 }
 
 section {
-  margin-top: 100px;
+  padding-top: 100px;
 }
 
 .section-title {
@@ -360,9 +360,6 @@ section {
   color: #757575;
 }
 
-#page-description {
-  margin-top: 0;
-}
 #page-description .content {
   text-align: center;
   padding: 200px 0;
