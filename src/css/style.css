@@ -367,65 +367,72 @@ section {
   color: #757575;
 }
 
+.header-home {
+  padding-top: 0;
+}
+
+.header-artist {
+  padding-top: 0;
+}
+
 #page-description {
   padding: 0;
-}
-#page-description .content {
   text-align: center;
   padding: 200px 0;
 }
 @media (max-width: 415px) {
-  #page-description .content {
+  #page-description {
     padding-top: 250px;
   }
 }
-#page-description .content p {
+#page-description p {
   margin-top: 31px;
   margin-bottom: 16px;
 }
 @media (max-width: 415px) {
-  #page-description .content p {
+  #page-description p {
     margin-top: 16px;
   }
 }
-#page-description .content form {
+#page-description form {
   margin: 0 auto;
   max-width: 570px;
   width: 100%;
 }
-#page-description .content form .login {
+#page-description form .login {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 1.5rem;
   margin: 1.5rem 0;
 }
 @media (max-width: 415px) {
-  #page-description .content form .login {
+  #page-description form .login {
     grid-template-columns: repeat(1, 1fr);
     grid-column-gap: 1.5rem;
   }
 }
-#page-description .content form .login input {
+#page-description form .login input {
   min-width: 270px;
   min-height: 50px;
   border: 2px solid #cacaca;
   border-radius: 3px;
 }
-#page-description .content form .login input::placeholder {
+#page-description form .login input::placeholder {
   padding-left: 20px;
   font-family: "Roboto Bold";
   font-size: 14px;
   line-height: 16px;
   color: #ffffff;
 }
-#page-description .content form .btn-arial {
+#page-description form .btn-arial {
   width: 100%;
   font-family: "Arial";
   font-weight: 400;
   font-size: 13.3px;
   line-height: 15px;
 }
-#page-description .ai-start {
+
+.ai-start {
   text-align: start;
 }
 
@@ -442,6 +449,9 @@ svg {
   width: 200px;
   padding-left: 30px;
   padding-right: 30px;
+  font-size: 12.8px;
+  font-family: "Roboto Regular";
+  text-transform: uppercase;
 }
 
 .mr-24 {

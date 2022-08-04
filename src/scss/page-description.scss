@@ -1,6 +1,14 @@
+.header-home {
+  padding-top: 0;
+}
+
+.header-artist {
+  padding-top: 0;
+} 
+
 #page-description {
   padding: 0;
-  & .content {
+ 
     text-align: center;
     padding: 200px 0;
 
@@ -56,13 +64,13 @@
       line-height: 15px;
     }
   }
+
+
+
 }
-& .ai-start {
+.ai-start {
   text-align: start;
 }
-
-}
-
 svg {
   fill: $white;
   width: 24px;
@@ -75,6 +83,9 @@ svg {
   width: 200px;
   padding-left: 30px;
   padding-right: 30px;
+  font-size: 12.8px;
+  font-family: $regular;
+  text-transform: uppercase;
 }
 
 .mr-24 {
