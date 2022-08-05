@@ -16,7 +16,7 @@
     & .btn {
         grid-column: 1/2;
         grid-row: 2;
-        width: 131px;
+        width: min-content;
         padding: 16px 40px;
         margin-top: 16px;
         text-transform: capitalize;
