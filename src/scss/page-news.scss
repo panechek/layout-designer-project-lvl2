@@ -51,6 +51,16 @@
 }
 
 .news-body {
+    & h3 {
+        font-size: 30px;
+        line-height: 45px;
+        font-weight: 400;text-transform: capitalize;
+        @media (max-width: $mobile-size)  {
+            font-size: 16px;
+            line-height: 24px;
+            
+        }
+    }
     & p {
         margin-top: 30px;
         margin-bottom: 25px;
@@ -72,7 +82,7 @@
 .news-footer {
     & a {
         width: 135px;
-        padding: 16px 30px;
+        padding: 16px 40px;
     }
 }
 
