@@ -307,6 +307,7 @@ section {
 }
 .header-wrapper {
   position: relative;
+  padding: 200px 0;
 }
 .header-main {
   display: flex;
@@ -370,17 +371,9 @@ section {
   color: #757575;
 }
 
-.header-home {
-  padding-top: 0;
-}
-
-.header-artist {
-  padding-top: 0;
-}
-
 #page-description {
-  padding: 200 0;
   text-align: center;
+  padding: 0;
 }
 #page-description p {
   margin-top: 31px;
@@ -641,7 +634,7 @@ svg {
 }
 .footer-top-info h2 {
   font-size: 18px;
-  line-height: 27;
+  line-height: 27px;
 }
 @media (max-width: 415px) {
   .footer-top-info ul {
