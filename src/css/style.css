@@ -33,7 +33,7 @@
   border: 0;
 }
 
-body {
+html {
   font-family: "Roboto Regular";
   font-size: 18px;
   line-height: 1.5em;
@@ -599,7 +599,7 @@ svg {
   margin-bottom: 100px;
 }
 .page-app-content:first-child {
-  margin-bottom: 16px;
+  margin-bottom: 1rem;
 }
 .page-app-content p {
   grid-column: 1/2;

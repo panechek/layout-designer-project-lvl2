@@ -4,7 +4,7 @@
     grid-template-columns: repeat(2, 1fr);
     margin-bottom: 100px;
     &:first-child {
-        margin-bottom: 16px;
+        margin-bottom: 1rem;
     }
     & p {
         grid-column: 1/2;
