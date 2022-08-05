@@ -3,6 +3,9 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     margin-bottom: 100px;
+    &:first-child {
+        margin-bottom: 16px;
+    }
     & p {
         grid-column: 1/2;
     }
@@ -20,6 +23,7 @@
         padding: 16px 40px;
         margin-top: 16px;
         text-transform: capitalize;
+        font-size: 12.8px;
     }
 
     @media (max-width: $mobile-size)  {

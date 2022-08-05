@@ -35,7 +35,7 @@
 
 body {
   font-family: "Roboto Regular";
-  font-size: 16px;
+  font-size: 18px;
   line-height: 1.5em;
   color: #cacaca;
   background-color: #08020d;
@@ -598,6 +598,9 @@ svg {
   grid-template-columns: repeat(2, 1fr);
   margin-bottom: 100px;
 }
+.page-app-content:first-child {
+  margin-bottom: 16px;
+}
 .page-app-content p {
   grid-column: 1/2;
 }
@@ -613,6 +616,7 @@ svg {
   padding: 16px 40px;
   margin-top: 16px;
   text-transform: capitalize;
+  font-size: 12.8px;
 }
 @media (max-width: 415px) {
   .page-app-content {
