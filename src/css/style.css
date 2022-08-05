@@ -113,7 +113,7 @@ h3 {
   text-transform: uppercase;
 }
 
-.text-white, .footer-top-info ul li {
+.text-white {
   color: #ffffff;
 }
 
@@ -182,7 +182,7 @@ h3 {
   line-height: 27px;
 }
 
-.text-16, .footer-top-info ul li {
+.text-16, .footer-bottom ul li, .footer-top-info ul li {
   font-family: "Roboto Regular";
   font-size: 16px;
   line-height: 24px;
@@ -653,35 +653,34 @@ svg {
   font-size: 18px;
   line-height: 27px;
 }
+.footer-top-info ul {
+  margin-top: 16px;
+}
 @media (max-width: 415px) {
   .footer-top-info ul {
-    margin-top: 16px;
     margin-bottom: 30px;
   }
 }
 .footer-top-social {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(4, min-content);
+  grid-gap: 24px;
 }
 .footer-bottom {
   padding: 2rem 0;
 }
 .footer-bottom ul {
-  display: flex;
-}
-.footer-bottom ul li {
-  padding-right: 16px;
-}
-@media (max-width: 415px) {
-  .footer-bottom ul li {
-    padding-top: 16px;
-  }
+  display: grid;
+  grid-template-columns: repeat(5, min-content);
+  grid-gap: 16px;
 }
 @media (max-width: 415px) {
   .footer-bottom ul {
-    flex-direction: column;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-row-gap: 16px;
   }
 }
-
 hr {
   border: 1px solid #cacaca;
 }
