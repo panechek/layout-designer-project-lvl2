@@ -586,7 +586,7 @@ svg {
 
 .news-footer a {
   width: 135px;
-  padding: 16px 40px;
+  padding: 16px 30px;
 }
 
 .data {
@@ -610,8 +610,9 @@ svg {
   grid-column: 1/2;
   grid-row: 2;
   width: 131px;
-  padding: 16px;
+  padding: 16px 40px;
   margin-top: 16px;
+  text-transform: capitalize;
 }
 @media (max-width: 415px) {
   .page-app-content {
