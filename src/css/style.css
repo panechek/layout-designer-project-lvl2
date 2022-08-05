@@ -113,10 +113,6 @@ h3 {
   text-transform: uppercase;
 }
 
-.relative {
-  position: relative;
-}
-
 .text-white, .footer-top-info ul li {
   color: #ffffff;
 }
@@ -224,7 +220,6 @@ h3 {
   text-transform: uppercase;
   padding-top: 20px;
   padding-bottom: 20px;
-  width: 100%;
   height: fit-content;
 }
 
@@ -310,6 +305,10 @@ section {
     align-items: start;
   }
 }
+.header-wrapper {
+  position: relative;
+  padding: 200px 0;
+}
 .header-main {
   display: flex;
 }
@@ -378,7 +377,6 @@ section {
 #page-description {
   padding: 0;
   text-align: center;
-  padding: 200px 0;
 }
 @media (max-width: 415px) {
   #page-description {
@@ -644,6 +642,7 @@ svg {
 }
 .footer-top-info h2 {
   font-size: 18px;
+  line-height: 27;
 }
 @media (max-width: 415px) {
   .footer-top-info ul {

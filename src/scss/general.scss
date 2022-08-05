@@ -68,9 +68,7 @@ h3 {
   @include title-style(18px);
 }
 
-.relative {
-  position: relative;
-}
+
 
 .text-white {
   color: $white;
@@ -124,7 +122,6 @@ h3 {
   padding-top: 20px;
   padding-bottom: 20px;
   @extend .text-center;
-  width: 100%;
   height: fit-content;
 }
 
