@@ -307,7 +307,6 @@ section {
 }
 .header-wrapper {
   position: relative;
-  padding: 200px 0;
 }
 .header-main {
   display: flex;
@@ -380,7 +379,7 @@ section {
 }
 
 #page-description {
-  padding: 0;
+  padding: 200 0;
   text-align: center;
 }
 #page-description p {
