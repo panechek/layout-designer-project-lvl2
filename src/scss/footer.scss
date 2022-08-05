@@ -31,9 +31,9 @@
         }
 
         &-social {
-            display: grid;
-            grid-template-columns: repeat(4, min-content);
-            grid-gap: 24px;
+           & li {
+            margin-right: 24px;
+           }
            
         }
     } 

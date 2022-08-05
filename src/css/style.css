@@ -50,17 +50,6 @@ ol[class] {
   list-style: none;
 }
 
-body,
-h1,
-h2,
-h3,
-h4,
-p,
-ul[class],
-li {
-  margin: 0;
-}
-
 li {
   list-style-type: none;
 }
@@ -661,10 +650,8 @@ svg {
     margin-bottom: 30px;
   }
 }
-.footer-top-social {
-  display: grid;
-  grid-template-columns: repeat(4, min-content);
-  grid-gap: 24px;
+.footer-top-social li {
+  margin-right: 24px;
 }
 .footer-bottom {
   padding: 2rem 0;
