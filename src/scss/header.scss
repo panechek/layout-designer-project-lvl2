@@ -40,6 +40,12 @@
       margin-left: 66px;
       & li {
         margin-right: 24px;
+        line-height: 13px;
+        & a {
+        font-size: 11px;
+        
+        text-transform: uppercase;
+        }
       }
   
       @media (max-width: $mobile-size)  {

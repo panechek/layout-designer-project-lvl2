@@ -333,6 +333,11 @@ section {
 }
 .header-main .nav li {
   margin-right: 24px;
+  line-height: 13px;
+}
+.header-main .nav li a {
+  font-size: 11px;
+  text-transform: uppercase;
 }
 @media (max-width: 415px) {
   .header-main .nav {
@@ -377,11 +382,6 @@ section {
 #page-description {
   padding: 0;
   text-align: center;
-}
-@media (max-width: 415px) {
-  #page-description {
-    padding-top: 250px;
-  }
 }
 #page-description p {
   margin-top: 31px;
