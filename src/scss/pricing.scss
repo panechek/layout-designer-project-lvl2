@@ -25,11 +25,15 @@
             & h3 {
                 margin-bottom: 200px;
                 text-transform: uppercase;
+                @extend .text-24;
+                @media (max-width: $mobile-size)  {
+                    font-size: 18px;
+                    line-height: 24px;
+                  }
             }
 
             & a {
-                padding-top: 21px;
-                padding-bottom: 21px;
+                padding: 20px 30px;
                 margin-bottom: 64px;
                 text-transform: uppercase;
             }

@@ -174,7 +174,7 @@ h3 {
   line-height: 48px;
 }
 
-.text-24 {
+.text-24, #page-pricing .pricing-item h3 {
   font-family: "Roboto Regular";
   font-size: 24px;
   line-height: 36px;
@@ -489,9 +489,14 @@ svg {
   margin-bottom: 200px;
   text-transform: uppercase;
 }
+@media (max-width: 415px) {
+  #page-pricing .pricing-item h3 {
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
 #page-pricing .pricing-item a {
-  padding-top: 21px;
-  padding-bottom: 21px;
+  padding: 20px 30px;
   margin-bottom: 64px;
   text-transform: uppercase;
 }
@@ -579,8 +584,7 @@ svg {
 
 .news-footer a {
   width: 135px;
-  padding-top: 17px;
-  padding-bottom: 17px;
+  padding: 16px 30px;
 }
 
 .data {
