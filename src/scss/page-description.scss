@@ -20,8 +20,8 @@
     & .login {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
-      grid-gap: 1.5rem;
-        margin: 1.5rem 0;
+      grid-gap: 20px;
+        margin-bottom: 1.5rem;
         @media (max-width: $mobile-size)  {
           grid-template-columns: repeat(1, 1fr);
           grid-column-gap: 1.5rem;
@@ -34,7 +34,7 @@
         border-radius: 3px;
 
         &::placeholder {
-          padding-left: 20px;
+          padding: 0 20px;
           font-family: 'Roboto Bold';
           font-size: 14px;
           line-height: 16px;

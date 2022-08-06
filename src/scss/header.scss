@@ -4,7 +4,9 @@
   top: 25px;
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 
+  1fr);
+  align-items: center;
   
   @media (max-width: $mobile-size)  {
     grid-template-columns: repeat(1, 1fr);
@@ -24,8 +26,8 @@
     }
   
     & .logo {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
+      display: flex;
+      align-items: center;
       & img {
         height: 24px;
         width: 24px;
@@ -35,10 +37,12 @@
   
       
     .nav { 
-      @include flex-between-item-center;
-      margin-left: 66px;
+     display: grid;
+     grid-template-columns: repeat(4, min-content);
+     grid-gap: 24px;
+      margin-left: 90px;
+      align-items: center;
       & li {
-        margin-right: 24px;
         line-height: 13px;
         & a {
         font-size: 11px;
