@@ -575,6 +575,10 @@ svg {
   margin-bottom: 48px;
   align-items: center;
 }
+.news-author p {
+  font-size: 12px;
+  line-height: 19;
+}
 .news-author img {
   width: 19px;
   height: 19px;

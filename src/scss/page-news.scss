@@ -72,6 +72,11 @@
     margin-bottom: 48px;
     align-items: center;
 
+    & p {
+        font-size: 12px;
+        line-height: 19;
+    }
+
     & img {
         width: 19px;
         height: 19px;
