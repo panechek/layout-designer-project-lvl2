@@ -457,12 +457,13 @@ svg {
   }
 }
 #page-pricing .pricing-item {
-  height: 570px;
+  height: 525px;
   border-radius: 1rem;
   padding: 24px 1.5rem 64px;
 }
 @media (max-width: 450px) {
   #page-pricing .pricing-item {
+    height: 517px;
     padding-top: 16px;
   }
 }
