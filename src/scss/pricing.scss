@@ -1,25 +1,21 @@
 #page-pricing {
 
     & .pricing {
-        @extend %flex-between;
+       display: grid;
+       grid-template-columns: repeat(3, 1fr);
+       grid-gap: 50px;
         margin-bottom: 43px;
 
         @media (max-width: $mobile-size)  {
-            flex-direction: column;
-            align-items: center;
+            grid-template-columns: repeat(1, 1fr);
           }
 
         &-item {
-            height: 615px;
+            height: 570px;
             border-radius: 1rem;
-            padding: 24px 1.5rem;
-
-            &-center {
-                margin: 0 4%;
-
-                @media (max-width: $mobile-size)  {
-                    margin: 50px 0;
-                  }
+            padding: 24px 1.5rem 64px;
+            @media (max-width: $mobile-size)  {
+                padding-top: 16px;
             }
 
             & h3 {
@@ -47,6 +43,10 @@
                 margin-left: 16px;
                 vertical-align: super;
             }
+        }
+        &-footer {
+            font-size: 12.8px;
+            line-height: 150%;
         }
     }
 }

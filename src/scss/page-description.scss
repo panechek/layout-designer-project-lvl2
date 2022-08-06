@@ -3,6 +3,11 @@
 #page-description {
   text-align: center;
   padding: 200px 0;
+  & h1 {
+    @media (max-width: $mobile-size)  {
+      margin-top: 50px;
+    }
+  }
 
   & p {
     margin-top: 31px;
@@ -32,6 +37,7 @@
         min-height: 50px;
         border: 2px solid $grey;
         border-radius: 3px;
+        box-sizing: border-box;
 
         &::placeholder {
           padding: 0 20px;

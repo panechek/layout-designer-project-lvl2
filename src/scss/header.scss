@@ -53,10 +53,10 @@
   
       @media (max-width: $mobile-size)  {
         margin-left: 0;
-        flex-direction: column;
-        align-items: start;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 0;
         margin-bottom: 18px;
-        margin-top: 5px;
+        margin-top: 17px;
       }
     }
   }
