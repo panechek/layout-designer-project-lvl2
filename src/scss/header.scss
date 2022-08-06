@@ -3,6 +3,7 @@
   position: absolute;
   top: 25px;
   width: 100%;
+  max-width: 1200px;
   display: grid;
   grid-template-columns: repeat(2, 
   1fr);
@@ -15,6 +16,7 @@
 
   &-wrapper {
     position: relative;
+    max-width: 1200px;
   }
   
   &-main {
@@ -70,6 +72,8 @@
   
     @media (max-width: $mobile-size)  {
       width: 100%;
+      max-width: 374px;
+      justify-self: start;
     }
     
     &::placeholder {
