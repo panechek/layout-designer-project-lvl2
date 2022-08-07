@@ -651,14 +651,17 @@ svg {
 
 .bg-gradient {
   background: linear-gradient(89.75deg, #5328a1 32.83%, #95390c 81.56%);
+  padding-top: 8px;
+  padding-bottom: 16px;
 }
 
 .footer-top {
-  padding: 3rem 0;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(2, min-content);
-  grid-gap: 42px;
+  grid-gap: 40px;
   grid-row-gap: 0;
 }
 @media (max-width: 450px) {
@@ -671,7 +674,11 @@ svg {
   grid-row: 1;
   font-size: 18px;
   line-height: 27px;
-  grid-row: 0;
+}
+@media (max-width: 450px) {
+  .footer-top h2 {
+    grid-row: auto;
+  }
 }
 .footer-top ul {
   margin-top: 16px;
@@ -688,7 +695,8 @@ svg {
   margin-right: 24px;
 }
 .footer-bottom {
-  padding: 2rem 0;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
   display: grid;
   grid-template-columns: repeat(5, min-content);
   grid-gap: 16px;

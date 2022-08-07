@@ -1,16 +1,17 @@
 .bg-gradient {
     background: linear-gradient(89.75deg, #5328a1 32.83%, #95390c 81.56%);
+    padding-top: 8px;
+    padding-bottom: 16px;
 }
-
-
 
 .footer {
     &-top {
-        padding: 3rem 0;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: repeat(2, min-content);
-        grid-gap: 42px;
+        grid-gap: 40px;
         grid-row-gap: 0;
 
         @media (max-width: $mobile-size)  {
@@ -18,40 +19,38 @@
             grid-template-rows: repeat(4, min-content);
         }
 
-        
-            & h2 {
-                grid-row: 1;
-                font-size: 18px;
-                line-height: 27px;
-                @media (max-width: $mobile-size)  {}
-                grid-row: 0;
+        & h2 {
+            grid-row: 1;
+            font-size: 18px;
+            line-height: 27px;
+            @media (max-width: $mobile-size)  {
+                grid-row: auto;
             }
+        }
             
-            & ul {
-                margin-top: 16px;
-                @media (max-width: $mobile-size)  {
-                    margin-bottom: 30px;
-                }
-
-                & li {
-                    @extend .text-16;
-                }
+        & ul {
+            margin-top: 16px;
+            @media (max-width: $mobile-size)  {
+                margin-bottom: 30px;
             }
-      
+
+            & li {
+                @extend .text-16;
+            }
+        }
 
         &-social {
            display: flex;
-
             
            & li {
             margin-right: 24px;
            }
-           
         }
     } 
-
+    
     &-bottom {
-        padding: 2rem 0;
+       padding-top: 2rem;
+       padding-bottom: 2rem;
         
        
             display: grid;
