@@ -689,7 +689,8 @@ svg {
   }
 }
 .footer-top-social {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(4, min-content);
 }
 .footer-top-social li {
   margin-right: 24px;
