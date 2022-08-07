@@ -168,7 +168,7 @@ h3 {
   line-height: 27px;
 }
 
-.text-16, .footer-bottom ul li, .footer-top-info ul li {
+.text-16, .footer-bottom li, .footer-top ul li {
   font-family: "Roboto Regular";
   font-size: 16px;
   line-height: 24px;
@@ -653,31 +653,31 @@ svg {
   background: linear-gradient(89.75deg, #5328a1 32.83%, #95390c 81.56%);
 }
 
-.footer {
-  padding: 8px 0 15px;
-}
 .footer-top {
   padding: 3rem 0;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-gap: 30px;
+  grid-template-rows: repeat(2, min-content);
+  grid-gap: 42px;
+  grid-row-gap: 0;
 }
 @media (max-width: 450px) {
   .footer-top {
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(4, min-content);
-    grid-gap: 0;
   }
 }
-.footer-top-info h2 {
+.footer-top h2 {
+  grid-row: 1;
   font-size: 18px;
   line-height: 27px;
+  grid-row: 0;
 }
-.footer-top-info ul {
+.footer-top ul {
   margin-top: 16px;
 }
 @media (max-width: 450px) {
-  .footer-top-info ul {
+  .footer-top ul {
     margin-bottom: 30px;
   }
 }
@@ -689,14 +689,12 @@ svg {
 }
 .footer-bottom {
   padding: 2rem 0;
-}
-.footer-bottom ul {
   display: grid;
   grid-template-columns: repeat(5, min-content);
   grid-gap: 16px;
 }
 @media (max-width: 450px) {
-  .footer-bottom ul {
+  .footer-bottom {
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(5, 1fr);
     grid-row-gap: 16px;

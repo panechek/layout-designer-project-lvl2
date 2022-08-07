@@ -5,24 +5,28 @@
 
 
 .footer {
-    padding: 8px 0 15px;
     &-top {
         padding: 3rem 0;
         display: grid;
         grid-template-columns: repeat(4, 1fr);
-        grid-gap: 30px;
+        grid-template-rows: repeat(2, min-content);
+        grid-gap: 42px;
+        grid-row-gap: 0;
 
         @media (max-width: $mobile-size)  {
             grid-template-columns: repeat(1, 1fr);
             grid-template-rows: repeat(4, min-content);
-            grid-gap: 0;
         }
 
-        &-info {
+        
             & h2 {
+                grid-row: 1;
                 font-size: 18px;
                 line-height: 27px;
+                @media (max-width: $mobile-size)  {}
+                grid-row: 0;
             }
+            
             & ul {
                 margin-top: 16px;
                 @media (max-width: $mobile-size)  {
@@ -33,7 +37,7 @@
                     @extend .text-16;
                 }
             }
-        }
+      
 
         &-social {
            display: flex;
@@ -49,7 +53,7 @@
     &-bottom {
         padding: 2rem 0;
         
-        & ul {
+       
             display: grid;
             grid-template-columns: repeat(5, min-content);
             grid-gap: 16px;
@@ -63,7 +67,7 @@
             & li {
                 @extend .text-16;
             }
-        }
+        
     }
 }
 
