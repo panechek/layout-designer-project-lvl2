@@ -24,14 +24,20 @@
         justify-content: space-between;
         width: 100%;
         align-items: center;
+       
 
         & .track-time {
             margin-right: 50px;
-            font-size: 12.8px;
-            line-height: 150%;
+            
             @media (max-width: $mobile-size)  {
                 margin-right: 0;
             }
         }
     }
+}
+.track-name,
+.track-author,
+.track-time {
+    font-size: 12.8px;
+    line-height: 150%;
 }
