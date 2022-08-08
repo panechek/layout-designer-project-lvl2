@@ -83,5 +83,7 @@ hr {
 }
 
 .mt-9 {
+    @media (max-width: $mobile-size)  {
     margin-top: 9px;
+}
 }

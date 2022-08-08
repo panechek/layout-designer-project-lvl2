@@ -736,8 +736,10 @@ hr {
   border: 1px solid #cacaca;
 }
 
-.mt-9 {
-  margin-top: 9px;
+@media (max-width: 450px) {
+  .mt-9 {
+    margin-top: 9px;
+  }
 }
 
 .popular-track-list {
