@@ -495,8 +495,8 @@ svg {
 }
 @media (max-width: 450px) {
   #page-pricing .pricing-item {
-    height: 517px;
-    padding-top: 16px;
+    height: 514px;
+    padding-top: 15px;
   }
 }
 #page-pricing .pricing-item h3 {
