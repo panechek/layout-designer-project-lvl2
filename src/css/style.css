@@ -814,14 +814,14 @@ hr {
 
 .similar-list {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(4, min-content);
   grid-gap: 50px;
   grid-row-gap: 25px;
   margin-bottom: 100px;
 }
 @media (max-width: 450px) {
   .similar-list {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, min-content);
   }
 }
 .similar-list .similar-item {
@@ -831,13 +831,12 @@ hr {
 .similar-list .similar-item img {
   width: 250px;
   height: 250px;
-  margin-bottom: 17px;
+  margin-bottom: 9px;
 }
 @media (max-width: 450px) {
   .similar-list .similar-item img {
     width: 137px;
     height: 137px;
-    margin-bottom: 18px;
   }
 }
 
