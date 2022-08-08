@@ -45,6 +45,17 @@ ol[class] {
   list-style: none;
 }
 
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+li {
+  margin: 0;
+}
+
 li {
   list-style-type: none;
 }
