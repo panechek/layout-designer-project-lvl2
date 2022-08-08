@@ -674,6 +674,11 @@ svg {
   background: linear-gradient(89.75deg, #5328a1 32.83%, #95390c 81.56%);
   padding: 8px 0;
 }
+@media (max-width: 570px) {
+  .bg-gradient {
+    padding-bottom: 16px;
+  }
+}
 
 .footer-top {
   padding-top: 3rem;
@@ -692,6 +697,9 @@ svg {
   }
 }
 .footer-top h2 {
+  font-family: "Arial";
+  font-style: normal;
+  font-weight: 700;
   grid-row: 1;
   font-size: 18px;
   line-height: 27px;
