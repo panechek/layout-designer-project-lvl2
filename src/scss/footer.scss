@@ -1,6 +1,6 @@
 .bg-gradient {
     background: linear-gradient(89.75deg, #5328a1 32.83%, #95390c 81.56%);
-    padding-top: 8px;
+    padding-top: 10px;
     padding-bottom: 16px;
 }
 
@@ -12,7 +12,7 @@
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: repeat(2, min-content);
         grid-gap: 40px;
-        grid-row-gap: 0;
+        grid-row-gap: 16px;
 
         @media (max-width: $mobile-size)  {
             grid-template-columns: repeat(1, 1fr);
@@ -29,9 +29,8 @@
         }
             
         & ul {
-            margin-top: 16px;
             @media (max-width: $mobile-size)  {
-                margin-bottom: 30px;
+                margin-bottom: 16px;
             }
 
             & li {
@@ -40,11 +39,11 @@
         }
 
         &-social {
-           display: grid;
-           grid-template-columns: repeat(4, min-content);
+        //    display: grid;
+        //    grid-template-columns: repeat(4, min-content);
             
            & a {
-            margin-right: 24px;
+            margin-right: 20px;
            }
         }
     } 
@@ -73,7 +72,5 @@ hr {
     border: 1px solid $grey;
     margin-top: 16px;
 
-    @media (max-width: $mobile-size)  {
-        margin-top: -16px;
-    }
+  
 }
