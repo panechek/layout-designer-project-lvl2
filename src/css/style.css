@@ -61,9 +61,7 @@ li {
 }
 
 .container {
-  max-width: 1240px;
-  padding-left: 20px;
-  padding-right: 20%;
+  max-width: 1200px;
   margin: 0 auto;
 }
 @media (max-width: 570px) {

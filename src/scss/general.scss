@@ -39,9 +39,9 @@ li {
 
 
 .container {
-  max-width: 1240px;
-  padding-left: 20px;
-  padding-right: 20%;
+  max-width: 1200px;
+  // padding-left: 20px;
+  // padding-right: 20%;
   margin: 0 auto;
   
   @media (max-width: $mobile-size) {
