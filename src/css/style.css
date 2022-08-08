@@ -676,7 +676,7 @@ svg {
 }
 @media (max-width: 450px) {
   .bg-gradient {
-    padding-bottom: 16px;
+    padding-bottom: 10px;
   }
 }
 
