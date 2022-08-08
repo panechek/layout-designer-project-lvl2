@@ -84,6 +84,12 @@ hr {
 
 .mt-9 {
     @media (max-width: $mobile-size)  {
-    margin-top: 9px;
+    margin-top: 14px;
+}
+}
+
+.mt-5 {
+    @media (max-width: $mobile-size)  {
+    margin-top: -5px;
 }
 }
