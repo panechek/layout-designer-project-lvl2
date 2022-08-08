@@ -694,6 +694,7 @@ svg {
   .footer-top {
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(4, min-content);
+    margin-bottom: 12px;
   }
 }
 .footer-top h2 {
@@ -708,11 +709,12 @@ svg {
 }
 @media (max-width: 450px) {
   .footer-top ul {
-    margin-bottom: 16px;
+    margin-bottom: 14px;
   }
 }
 .footer-top-social a {
   margin-right: 20px;
+  height: 20px;
 }
 .footer-bottom {
   padding-top: 2rem;
@@ -732,6 +734,10 @@ svg {
 
 hr {
   border: 1px solid #cacaca;
+}
+
+.mt-9 {
+  margin-top: 9px;
 }
 
 .popular-track-list {
