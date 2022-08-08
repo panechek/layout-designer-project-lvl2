@@ -663,11 +663,6 @@ svg {
   grid-row-gap: 16px;
   margin-top: 16px;
 }
-@media (max-width: 570px) {
-  .page-app-content {
-    margin-top: -16px;
-  }
-}
 .page-app-content .btn {
   width: min-content;
   padding: 16px 40px;
