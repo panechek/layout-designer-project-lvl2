@@ -11,7 +11,7 @@
           }
 
         &-item {
-            height: 525px;
+            height: 530px;
             border-radius: 1rem;
             padding: 24px 1.5rem 64px;
             @media (max-width: $mobile-size)  {
@@ -38,7 +38,7 @@
         }
         &-value {
             line-height: 1em;
-            margin-bottom: 40px;
+            margin-bottom: 37px;
 
             & span {
                 margin-left: 16px;
