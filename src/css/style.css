@@ -782,22 +782,20 @@ hr {
 
 .discography-list {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(4, min-content);
+  grid-gap: 50px;
   grid-row-gap: 25px;
 }
 @media (max-width: 450px) {
   .discography-list {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, min-content);
   }
 }
 
-.discography-item {
-  width: min-content;
-}
 .discography-item img {
   width: 250px;
   height: 250px;
-  margin-bottom: 18px;
+  margin-bottom: 10px;
 }
 @media (max-width: 450px) {
   .discography-item img {
@@ -807,6 +805,11 @@ hr {
 }
 .discography-item h3 {
   text-transform: capitalize;
+}
+@media (max-width: 450px) {
+  .discography-item h3 {
+    width: 140px;
+  }
 }
 
 .similar-list {

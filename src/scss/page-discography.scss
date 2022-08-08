@@ -1,17 +1,17 @@
 .discography-list {
  display: grid;
- grid-template-columns: repeat(4, 1fr);
+ grid-template-columns: repeat(4, min-content);
+ grid-gap: 50px;
  grid-row-gap: 25px;
  @media (max-width: $mobile-size)  {
- grid-template-columns: repeat(2, 1fr);
+ grid-template-columns: repeat(2, min-content);
 }
 }
 .discography-item {
-    width: min-content;
     & img {
         width: 250px;
         height: 250px;
-        margin-bottom: 18px;
+        margin-bottom: 10px;
         @media (max-width: $mobile-size)  {
             width: 137px;
             height: 137px;
@@ -19,5 +19,9 @@
     }
     & h3 {
             text-transform: capitalize;
+            @media (max-width: $mobile-size)  {
+                width: 140px;
+            }
+
         }
 }
