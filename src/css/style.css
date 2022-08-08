@@ -672,8 +672,7 @@ svg {
 
 .bg-gradient {
   background: linear-gradient(89.75deg, #5328a1 32.83%, #95390c 81.56%);
-  padding-top: 10px;
-  padding-bottom: 16px;
+  padding: 8px 0;
 }
 
 .footer-top {
@@ -684,6 +683,7 @@ svg {
   grid-template-rows: repeat(2, min-content);
   grid-gap: 40px;
   grid-row-gap: 16px;
+  margin-bottom: 18px;
 }
 @media (max-width: 570px) {
   .footer-top {
@@ -726,7 +726,6 @@ svg {
 
 hr {
   border: 1px solid #cacaca;
-  margin-top: 16px;
 }
 
 .popular-track-list {

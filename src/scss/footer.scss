@@ -1,7 +1,6 @@
 .bg-gradient {
     background: linear-gradient(89.75deg, #5328a1 32.83%, #95390c 81.56%);
-    padding-top: 10px;
-    padding-bottom: 16px;
+    padding: 8px 0;
 }
 
 .footer {
@@ -13,6 +12,7 @@
         grid-template-rows: repeat(2, min-content);
         grid-gap: 40px;
         grid-row-gap: 16px;
+        margin-bottom: 18px;
 
         @media (max-width: $mobile-size)  {
             grid-template-columns: repeat(1, 1fr);
@@ -70,7 +70,7 @@
 
 hr {
     border: 1px solid $grey;
-    margin-top: 16px;
+    // margin-top: 16px;
 
   
 }
