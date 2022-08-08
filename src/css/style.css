@@ -179,7 +179,7 @@ h3 {
   line-height: 27px;
 }
 
-.text-16, .footer-bottom li, .footer-top ul li {
+.text-16, .footer-top ul li {
   font-family: "Roboto Regular";
   font-size: 16px;
   line-height: 24px;
@@ -713,7 +713,7 @@ svg {
   display: grid;
   grid-template-columns: repeat(4, min-content);
 }
-.footer-top-social li {
+.footer-top-social a {
   margin-right: 24px;
 }
 .footer-bottom {
@@ -730,6 +730,7 @@ svg {
     grid-row-gap: 16px;
   }
 }
+
 hr {
   border: 1px solid #cacaca;
   margin-top: 16px;
