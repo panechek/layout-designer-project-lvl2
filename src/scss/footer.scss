@@ -20,7 +20,7 @@
         @media (max-width: $mobile-size)  {
             grid-template-columns: repeat(1, 1fr);
             grid-template-rows: repeat(4, min-content);
-            margin-bottom: 12px;
+            margin-bottom: 20px;
         }
 
         & h2 {
@@ -48,7 +48,6 @@
             
            & a {
             margin-right: 20px;
-            height: 20px;
             display: block;
            }
         }
