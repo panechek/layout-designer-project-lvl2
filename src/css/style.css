@@ -16,23 +16,29 @@
   font-style: normal;
   src: url("../fonts/Roboto-Regular.ttf");
 }
+@font-face {
+  font-weight: 400;
+  font-family: "Arial Regular";
+  font-style: normal;
+  src: url("../fonts/ARIAL.TTF");
+}
 .header-artist, .header-home {
   background-position: center;
   background-size: cover;
 }
 
 * {
-  outline: 0;
-  padding: 0;
   margin: 0;
+  padding: 0;
   border: 0;
+  outline: 0;
 }
 
 html {
-  font-family: "Roboto Regular";
-  font-size: 18px;
-  line-height: 1.5em;
   color: #cacaca;
+  font-size: 18px;
+  font-family: "Roboto Regular";
+  line-height: 1.5em;
   background-color: #08020d;
 }
 
@@ -62,14 +68,14 @@ li {
 
 .container {
   max-width: 1200px;
-  padding-left: 20px;
-  padding-right: 20px;
   margin: 0 auto;
+  padding-right: 20px;
+  padding-left: 20px;
 }
 @media (max-width: 450px) {
   .container {
-    padding-left: 20px;
     padding-right: 20px;
+    padding-left: 20px;
   }
 }
 
@@ -127,9 +133,9 @@ h3 {
 }
 
 .text-11-upper {
-  line-height: 13px;
-  font-family: "Roboto Regular";
   font-size: 11px;
+  font-family: "Roboto Regular";
+  line-height: 13px;
   text-transform: uppercase;
 }
 
@@ -179,7 +185,7 @@ h3 {
   line-height: 27px;
 }
 
-.text-16, .footer-top ul li {
+.text-16 {
   font-size: 16px;
   font-family: "Roboto Regular";
   line-height: 24px;
@@ -205,19 +211,20 @@ h3 {
   padding: 16px;
 }
 
-.text-center, .btn {
+.text-center {
   text-align: center;
 }
 
 .btn {
-  color: #fff;
-  border-radius: 5px;
-  border: 1px solid #cacaca;
   display: block;
-  text-transform: uppercase;
+  height: fit-content;
   padding-top: 20px;
   padding-bottom: 20px;
-  height: fit-content;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  border: 1px solid #cacaca;
+  border-radius: 5px;
 }
 
 .btn-brown {
@@ -292,11 +299,11 @@ section {
 .header {
   position: absolute;
   top: 25px;
-  width: 100%;
-  max-width: 1200px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
+  width: 100%;
+  max-width: 1200px;
 }
 @media (max-width: 450px) {
   .header {
@@ -322,16 +329,16 @@ section {
   align-items: center;
 }
 .header-main .logo img {
-  height: 24px;
   width: 24px;
+  height: 24px;
   margin-right: 16px;
 }
 .header-main .nav {
   display: grid;
-  grid-template-columns: repeat(4, min-content);
   grid-gap: 24px;
-  margin-left: 90px;
+  grid-template-columns: repeat(4, min-content);
   align-items: center;
+  margin-left: 90px;
 }
 .header-main .nav li {
   line-height: 13px;
@@ -342,36 +349,35 @@ section {
 }
 @media (max-width: 450px) {
   .header-main .nav {
-    margin-left: 0;
-    grid-template-columns: repeat(1, 1fr);
     grid-gap: 0;
-    margin-bottom: 18px;
+    grid-template-columns: repeat(1, 1fr);
     margin-top: 17px;
+    margin-bottom: 18px;
+    margin-left: 0;
   }
 }
 .header input {
+  justify-self: end;
   width: 248px;
   height: 25px;
   background: #3c3b3d;
   border-radius: 50px;
-  justify-self: end;
 }
 @media (max-width: 450px) {
   .header input {
+    justify-self: start;
     width: 100%;
     max-width: 374px;
-    justify-self: start;
   }
 }
 .header input::placeholder {
-  font-family: "Arial";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 13.3px;
-  line-height: 15px;
-  text-transform: uppercase;
   padding-left: 10px;
   color: #757575;
+  font-weight: 400;
+  font-size: 13.3px;
+  font-family: "Arial Regular";
+  line-height: 15px;
+  text-transform: uppercase;
 }
 
 #page-description {
@@ -413,23 +419,24 @@ section {
   }
 }
 .page-description-home form .login input {
+  box-sizing: border-box;
   min-width: 270px;
   min-height: 50px;
   border: 2px solid #cacaca;
   border-radius: 3px;
-  box-sizing: border-box;
 }
 .page-description-home form .login input::placeholder {
   padding: 0 20px;
-  font-family: "Roboto Bold";
-  font-size: 14px;
-  line-height: 16px;
   color: #fff;
+  font-size: 14px;
+  font-family: "Roboto Bold";
+  line-height: 16px;
 }
 .page-description-home form .btn-arial {
   width: 100%;
   font-weight: 400;
   font-size: 13.3px;
+  font-family: "Arial Regular";
   line-height: 15px;
 }
 
@@ -630,8 +637,8 @@ svg {
 
 #page-app {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, auto);
+  grid-template-columns: repeat(2, 1fr);
   margin-bottom: 100px;
 }
 #page-app h2 {
@@ -658,20 +665,20 @@ svg {
 
 .page-app-content {
   display: grid;
-  grid-template-rows: repeat(3, min-content);
   grid-row-gap: 16px;
+  grid-template-rows: repeat(3, min-content);
   margin-top: 16px;
 }
 .page-app-content .btn {
   width: min-content;
   padding: 16px 40px;
-  text-transform: capitalize;
   font-size: 12.8px;
+  text-transform: capitalize;
 }
 
 .bg-gradient {
-  background: linear-gradient(89.75deg, #5328a1 32.83%, #95390c 81.56%);
   padding: 8px 0;
+  background: linear-gradient(89.75deg, #5328a1 32.83%, #95390c 81.56%);
 }
 @media (max-width: 450px) {
   .bg-gradient {
@@ -680,19 +687,19 @@ svg {
 }
 
 .footer-top {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(2, min-content);
   grid-gap: 40px;
   grid-row-gap: 16px;
+  grid-template-rows: repeat(2, min-content);
+  grid-template-columns: repeat(4, 1fr);
   margin-bottom: 18px;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }
 @media (max-width: 450px) {
   .footer-top {
-    grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(4, min-content);
+    grid-template-columns: repeat(1, 1fr);
     margin-bottom: 13px;
   }
 }
@@ -711,27 +718,31 @@ svg {
     margin-bottom: 14px;
   }
 }
+.footer-top ul li {
+  font-size: 16px;
+  line-height: 150%;
+}
 .footer-top-social {
   display: flex;
-  height: min-content;
   align-items: center;
+  height: min-content;
 }
 .footer-top-social a {
-  margin-right: 24px;
   display: block;
+  margin-right: 24px;
 }
 .footer-bottom {
+  display: grid;
+  grid-gap: 16px;
+  grid-template-columns: repeat(5, min-content);
   padding-top: 2rem;
   padding-bottom: 2rem;
-  display: grid;
-  grid-template-columns: repeat(5, min-content);
-  grid-gap: 16px;
 }
 @media (max-width: 450px) {
   .footer-bottom {
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(5, 1fr);
     grid-row-gap: 16px;
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-columns: repeat(1, 1fr);
   }
   .footer-bottom a {
     margin-top: 1px;
