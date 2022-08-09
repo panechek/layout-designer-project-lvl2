@@ -1,15 +1,18 @@
 * {
-	outline: 0;
-	padding: 0;
-	margin: 0;
-	border: 0;
+  margin: 0;
+  padding: 0;
+
+  border: 0;
+  outline: 0;
 }
-  
+
 html {
-  font-family: $regular;
-  font-size: 18px;
-  line-height: 1.5em;
   color: $grey;
+  font-size: 18px;
+  font-family: $regular;
+
+  line-height: 1.5em;
+
   background-color: $black;
 }
 
@@ -31,36 +34,35 @@ p,
 ul,
 li {
   margin: 0;
-} 
+}
 
 li {
   list-style-type: none;
 }
 
-
 .container {
   max-width: 1200px;
-  padding-left: 20px;
-  padding-right: 20px;
   margin: 0 auto;
-  
+  padding-right: 20px;
+  padding-left: 20px;
+
   @media (max-width: $mobile-size) {
-    padding-left: 20px;
     padding-right: 20px;
+    padding-left: 20px;
   }
 }
-  
+
 h1 {
   @include title-style(60px);
- 
+
   @media (max-width: $mobile-size) {
     @include title-style(30px);
   }
 }
-  
+
 h2 {
   @include title-style(38px);
-  
+
   @media (max-width: $mobile-size) {
     @include title-style(18px);
   }
@@ -69,8 +71,6 @@ h2 {
 h3 {
   @include title-style(18px);
 }
-
-
 
 .text-white {
   color: $white;
@@ -89,9 +89,10 @@ h3 {
 }
 
 .text-11-upper {
-  line-height: 13px;
-  font-family: $regular;
   font-size: 11px;
+  font-family: $regular;
+
+  line-height: 13px;
   text-transform: uppercase;
 }
 
@@ -100,7 +101,7 @@ h3 {
 }
 
 @each $size in $text-size {
-  @include text-constructor($size)
+  @include text-constructor($size);
 }
 
 .p-24 {
@@ -116,15 +117,18 @@ h3 {
 }
 
 .btn {
-  color: $white;
-  border-radius: 5px;
-  border: 1px solid $grey;
   display: block;
-  text-transform: uppercase;
+  height: fit-content;
   padding-top: 20px;
   padding-bottom: 20px;
-  @extend .text-center;
-  height: fit-content;
+
+  color: $white;
+  text-align: center;
+
+  text-transform: uppercase;
+
+  border: 1px solid $grey;
+  border-radius: 5px;
 }
 
 .btn-brown {
@@ -149,19 +153,19 @@ h3 {
 .btn-group {
   display: flex;
 
-  @media (max-width: $mobile-size)  {
+  @media (max-width: $mobile-size) {
     flex-direction: column;
   }
 }
 
 section {
- padding-top: 100px;
+  padding-top: 100px;
 }
 
 .section-title {
   margin-bottom: 48px;
-  text-align: center;;
 
+  text-align: center;
 }
 
 .text-capitalize {
@@ -185,7 +189,7 @@ section {
 }
 
 @each $header,$path in $header-backs {
-  @include header-back($header, $path)
+  @include header-back($header, $path);
 }
 
 .bold {

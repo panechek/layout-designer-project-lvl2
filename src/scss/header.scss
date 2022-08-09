@@ -1,91 +1,99 @@
-
 .header {
   position: absolute;
   top: 25px;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
   width: 100%;
   max-width: 1200px;
-  display: grid;
-  grid-template-columns: repeat(2, 
-  1fr);
-  align-items: center;
-  
-  @media (max-width: $mobile-size)  {
+
+  @media (max-width: $mobile-size) {
     grid-template-columns: repeat(1, 1fr);
     align-items: start;
   }
 
   &-wrapper {
     position: relative;
+
     max-width: 1200px;
   }
-  
+
   &-main {
     display: flex;
-  
-    @media (max-width: $mobile-size)  {
+
+    @media (max-width: $mobile-size) {
       flex-direction: column;
       align-items: start;
     }
-  
+
     & .logo {
       display: flex;
       align-items: center;
+
       & img {
-        height: 24px;
         width: 24px;
+        height: 24px;
+
         margin-right: 16px;
       }
     }
-  
-      
-    .nav { 
-     display: grid;
-     grid-template-columns: repeat(4, min-content);
-     grid-gap: 24px;
-      margin-left: 90px;
+
+    .nav {
+      display: grid;
+      grid-gap: 24px;
+      grid-template-columns: repeat(4, min-content);
       align-items: center;
+
+      margin-left: 90px;
+
       & li {
         line-height: 13px;
+
         & a {
-        font-size: 11px;
-        
-        text-transform: uppercase;
+          font-size: 11px;
+
+          text-transform: uppercase;
         }
       }
-  
-      @media (max-width: $mobile-size)  {
-        margin-left: 0;
-        grid-template-columns: repeat(1, 1fr);
+
+      @media (max-width: $mobile-size) {
         grid-gap: 0;
-        margin-bottom: 18px;
+        grid-template-columns: repeat(1, 1fr);
+
         margin-top: 17px;
+        margin-bottom: 18px;
+        margin-left: 0;
       }
     }
   }
-  
+
   & input {
+    justify-self: end;
     width: 248px;
     height: 25px;
+
     background: $dark-grey;
     border-radius: 50px;
-    justify-self: end;
-  
-    @media (max-width: $mobile-size)  {
+
+    @media (max-width: $mobile-size) {
+      justify-self: start;
       width: 100%;
       max-width: 374px;
-      justify-self: start;
     }
-    
+
     &::placeholder {
-      font-family: 'Arial';
-      font-style: normal;
+      padding-left: 10px;
+
+      color: #757575;
+
       font-weight: 400;
       font-size: 13.3px;
+      font-family: $arial;
+
       line-height: 15px;
+
       text-transform: uppercase;
-      padding-left: 10px;
-  
-      color: #757575;
     }
   }
 }
