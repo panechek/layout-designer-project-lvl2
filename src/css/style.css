@@ -714,6 +714,7 @@ svg {
 }
 .footer-top-social {
   display: flex;
+  height: min-content;
 }
 .footer-top-social a {
   margin-right: 20px;
