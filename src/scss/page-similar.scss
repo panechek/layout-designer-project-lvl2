@@ -1,25 +1,28 @@
 .similar-list {
-    display: grid;
-    grid-template-columns: repeat(4, min-content);
-    grid-gap: 50px;
-    grid-row-gap: 25px;
-    margin-bottom: 100px;
-    @media (max-width: $mobile-size)  {
-        grid-template-columns: repeat(2, min-content);
-    }
+  display: grid;
+  grid-gap: 50px;
+  grid-row-gap: 25px;
+  grid-template-columns: repeat(4, min-content);
+  margin-bottom: 100px;
 
-    .similar-item {
-        width: min-content;
-        text-align: center;
-        & img {
-            width: 250px;
-            height: 250px;
-            margin-bottom: 10px;
-            @media (max-width: $mobile-size)  {
-                width: 137px;
-                height: 137px;
-            }
+  @media (max-width: $mobile-size) {
+    grid-template-columns: repeat(2, min-content);
+  }
 
-        }
+  .similar-item {
+    width: min-content;
+
+    text-align: center;
+
+    & img {
+      width: 250px;
+      height: 250px;
+      margin-bottom: 10px;
+
+      @media (max-width: $mobile-size) {
+        width: 137px;
+        height: 137px;
+      }
     }
+  }
 }

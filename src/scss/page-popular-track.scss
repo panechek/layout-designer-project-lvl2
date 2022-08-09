@@ -1,43 +1,45 @@
 .popular-track-list {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-row-gap: 25px;
+  display: grid;
+  grid-row-gap: 25px;
+  grid-template-columns: repeat(2, 1fr);
 
-    @media (max-width: $mobile-size)  {
-        grid-template-columns: auto;
-    }
+  @media (max-width: $mobile-size) {
+    grid-template-columns: auto;
+  }
 }
 
-.popular-track{
-  display: flex;
-    @media (max-width: $mobile-size)  {
-        width: 100%;
-    }
-    & img {
-        margin-right: 15px;
-        width: 55px;
-        height: 55px;
-    }
-
-    .track-info {
-        display: flex;
-        justify-content: space-between;
-        width: 100%;
-        align-items: center;
-       
-
-        & .track-time {
-            margin-right: 50px;
-            
-            @media (max-width: $mobile-size)  {
-                margin-right: 0;
-            }
-        }
-    }
-}
 .track-name,
 .track-author,
 .track-time {
-    font-size: 12.8px;
-    line-height: 150%;
+  font-size: 12.8px;
+  line-height: 150%;
+}
+
+.popular-track {
+  display: flex;
+
+  @media (max-width: $mobile-size) {
+    width: 100%;
+  }
+
+  & img {
+    width: 55px;
+    height: 55px;
+    margin-right: 15px;
+  }
+
+  .track-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+
+    & .track-time {
+      margin-right: 50px;
+
+      @media (max-width: $mobile-size) {
+        margin-right: 0;
+      }
+    }
+  }
 }

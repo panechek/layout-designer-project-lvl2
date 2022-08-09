@@ -6,19 +6,16 @@ $green: #34c176;
 $orange: #f89202;
 $purple: #5328a1;
 $brown: #95390c;
-$white: #ffffff;
-
+$white: #fff;
 $bold: "Roboto Bold";
 $regular: "Roboto Regular";
 $medium: "Roboto Medium";
-
-
 $mobile-size: 450px;
 
 @mixin title-style($size) {
   font-size: $size;
-  line-height: 1.5 * $size;
   font-family: $bold;
+  line-height: 1.5 * $size;
   text-transform: uppercase;
 }
 
@@ -37,15 +34,13 @@ $mobile-size: 450px;
   background-size: cover;
 }
 
-
-
-@mixin padding-around ($size) {
+@mixin padding-around($size) {
   padding: $size;
 }
 
 $items: 1, 2, 3;
 
-@mixin item-back ($item-count) {
+@mixin item-back($item-count) {
   .item-#{$item-count} {
     background: url("../images/subscribe_#{$item-count}.png");
     background-position: center;
@@ -55,10 +50,10 @@ $items: 1, 2, 3;
 
 $text-size: 64, 56, 48, 40, 32, 24, 18, 16, 13, 11;
 
-@mixin text-constructor ($size) {
+@mixin text-constructor($size) {
   .text-#{$size} {
-    font-family: $regular;
     font-size: #{$size}px;
+    font-family: $regular;
     line-height: #{$size * 1.5}px;
   }
 }
@@ -71,7 +66,7 @@ $header-backs: (
 @mixin header-back($header-name, $header-path) {
   .header-#{$header-name} {
     background-image: url("#{$header-path}");
+
     @extend %background-cover;
   }
- }
-
+}

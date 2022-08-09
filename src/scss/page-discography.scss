@@ -1,27 +1,31 @@
 .discography-list {
- display: grid;
- grid-template-columns: repeat(4, min-content);
- grid-gap: 50px;
- grid-row-gap: 25px;
- @media (max-width: $mobile-size)  {
- grid-template-columns: repeat(2, min-content);
-}
-}
-.discography-item {
-    & img {
-        width: 250px;
-        height: 250px;
-        margin-bottom: 10px;
-        @media (max-width: $mobile-size)  {
-            width: 137px;
-            height: 137px;
-        }
-    }
-    & h3 {
-            text-transform: capitalize;
-            @media (max-width: $mobile-size)  {
-                width: 138px;
-            }
+  display: grid;
+  grid-gap: 50px;
+  grid-row-gap: 25px;
+  grid-template-columns: repeat(4, min-content);
 
-        }
+  @media (max-width: $mobile-size) {
+    grid-template-columns: repeat(2, min-content);
+  }
+}
+
+.discography-item {
+  & img {
+    width: 250px;
+    height: 250px;
+    margin-bottom: 10px;
+
+    @media (max-width: $mobile-size) {
+      width: 137px;
+      height: 137px;
+    }
+  }
+
+  & h3 {
+    text-transform: capitalize;
+
+    @media (max-width: $mobile-size) {
+      width: 138px;
+    }
+  }
 }
