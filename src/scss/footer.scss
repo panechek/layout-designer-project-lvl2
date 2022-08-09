@@ -44,12 +44,12 @@
         }
 
         &-social {
-        //    display: grid;
-        //    grid-template-columns: repeat(4, min-content);
+        display: flex;
             
            & a {
             margin-right: 20px;
             height: 20px;
+            display: block;
            }
         }
     } 

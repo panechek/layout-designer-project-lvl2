@@ -712,9 +712,13 @@ svg {
     margin-bottom: 14px;
   }
 }
+.footer-top-social {
+  display: flex;
+}
 .footer-top-social a {
   margin-right: 20px;
   height: 20px;
+  display: block;
 }
 .footer-bottom {
   padding-top: 2rem;
